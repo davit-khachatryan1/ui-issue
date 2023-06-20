@@ -1,0 +1,106 @@
+.ResearchInvestmentClass{
+  position: relative;
+  height: max-content;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 60px ;
+
+  @media(max-width: 400px) {
+    padding: 0;
+
+
+  }
+  @media(max-width: 990px) {
+    padding: 0;
+
+
+  }
+  .ResearchInvestmentClass:hover &_bg {
+    opacity: 1;
+    transition: opacity 0.8s ease;
+  }
+  &_bg{
+    opacity: 0.4;
+    transition: opacity 0.8s ease;
+
+    @media (max-width: 575px) {
+      // transform: scale(1.5);
+      transform: rotate(-5deg);
+      max-width: 140%;
+      min-width: 120%;
+      left: -10% !important;
+      object-fit: cover;
+      object-position: 85%;
+   }
+  }
+
+  &__OneClickTitle{
+    color: #42BFF8;
+    font-size:26.64px;
+    line-height: 28px;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    margin-bottom: 23px;
+
+    @media (max-width: 915px){
+      padding-top: 90px;
+    }
+
+    @media (max-width: 400px){
+      margin-bottom: 15px;
+
+      // padding-top: 75px ;
+      padding-top: 70px;
+      font-size: 16px;
+      line-height: 15px;
+    }
+  }
+  &__OneClickText{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 44px;
+    padding: 0 0 113px ;
+    justify-content: center;
+    text-align: center;
+    width: 787px;
+
+
+    @media(max-width: 915px) {
+      padding: 0 10px 57px ;
+      margin: 0 auto;
+      line-height: 1.375;
+      font-size: 19px;
+      font-weight: 400;
+      width: 340px;
+
+    }
+    @media(max-width: 575px) {
+      // padding-bottom: 30px;
+      padding-bottom: 50px;
+
+    }
+    &__size{
+      width: 787px;
+      margin: auto;
+      position: relative;
+
+      @media(max-width: 900px) {
+        width: 600px;
+      }
+
+      @media(max-width: 601px) {
+        width: 400px;
+      }
+
+      @media(max-width: 400px) {
+        margin:0 auto ;
+        width: 350px;
+
+
+      }
+    }
+  }
+
+}

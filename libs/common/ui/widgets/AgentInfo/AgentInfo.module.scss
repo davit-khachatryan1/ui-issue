@@ -1,0 +1,80 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.agentInfo {
+  margin-bottom: 67px;
+  &__cover {
+    position: relative;
+    margin-bottom: 60px;
+    @include mediaMd {
+      margin-bottom: 30px;
+    }
+  }
+  &__coverBg {
+    object-fit: cover;
+    max-height: 332px;
+    object-position: 100% 70%;
+    width: 100%;
+  }
+  &__coverAvatar {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 65px;
+    width: 125px;
+    height: 125px;
+    border: 5px solid white;
+    border-radius: 50%;
+    z-index: 2;
+    translate: 0 20%;
+    @include mediaMd {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  &__creds {
+    display: flex;
+    justify-content: space-between;
+    @include mediaMd {
+      flex-direction: column;
+    }
+  }
+  &__name {
+    @include titleFont(26px, 1.2);
+    margin-bottom: 2px;
+    @include mediaMd {
+      @include titleFont(22px, 1.2);
+    }
+  }
+  &__motto {
+    @include subtitleFont(18px, 1.4);
+    color: $grayColor;
+    @include mediaMd {
+      @include subtitleFont(14px, 1.4);
+    }
+  }
+  &__credsList {
+    @include subtitleFont(18px, 1.4);
+    display: grid;
+    grid-template: 1fr 1fr / auto auto;
+    gap: 8px 32px;
+    color: black;
+    span {
+      color: $grayColor;
+      margin-right: 0.5ch;
+    }
+    @include mediaMd {
+      margin-top: 30px;
+      @include subtitleFont(14px, 1.4);
+      grid-template: repeat(4, auto) / auto;
+    }
+  }
+  &__credsItem {
+    &:nth-of-type(3) {
+      justify-self: end;
+
+      @include mediaMd {
+        justify-self: start;
+      }
+    }
+  }
+}

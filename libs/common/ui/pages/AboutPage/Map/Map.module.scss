@@ -1,0 +1,217 @@
+
+$transitionSpeed: .2s; //Скорость анимации
+
+$color-title: #FFFFFF;
+$color-accent: #42BFF8;
+
+
+.wrapper {
+   position: relative;
+}
+
+.decor1 {
+   position: absolute;
+   width: 1043px;
+   height: 822px;
+   // left: 810px;
+   left: -10%;
+   top: -100%;
+   z-index: 0;
+   // background: #64B9E0;
+   opacity: 0.08;
+   // filter: blur(191.5px);
+   background: radial-gradient(ellipse farthest-corner at center center, #64B9E0 0%, transparent 60%);
+}
+
+.decor2 {
+   // position: absolute;
+   // width: 1043px;
+   // height: 822px;
+   // right: -30%;
+   // bottom: 0px;
+   
+   // opacity: 0.08;
+   // background: radial-gradient(ellipse farthest-corner at center center, #64B9E0 0%, transparent 60%);
+}
+
+.map {
+   font-family: 'Gilroy';
+   min-height: 500px;
+   margin-bottom: -15px;
+   background-image: url("../../../assets/imgs/map.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   position: relative;
+   z-index: 1;
+   
+   @media (max-width: 575px) {
+      margin-bottom: -100px;
+      padding: 50px 10px 200;
+      margin-top: 80px;
+   }
+
+   &__content {
+      width: 100%;
+      position: sticky;
+      top: 100px;
+      text-align: center;
+   }
+   
+   &__title {
+      font-size: 43px;
+      line-height: 1.47;
+      font-weight: 300;
+      max-width: 870px;
+      margin: 0 auto 64px;
+      color: $color-title;
+      max-width: 835px;
+
+      @media (max-width: 767px) {
+         font-size: 35px;
+         margin: 0 60px 52px;
+      }
+      @media (max-width: 575px) {
+         font-size: 23px;
+         line-height: 1.22;
+         font-weight: 400;
+         margin: 0 auto 52px;
+         max-width: 300px;
+      }
+   }
+   
+   &__link  {
+      color: $color-accent !important;
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 1.28125;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;   
+      transition: $transitionSpeed;
+      gap: 27px;
+      padding-right: 23px;
+      margin: 0 60px 74px; 
+      position: relative;     
+
+      &_ar {
+         padding-right: 0;
+         .map__link_arrow {
+            transform: rotate(180deg);
+         }
+      }
+
+      &_arrow {
+         position: relative;
+         // background-color: yellowgreen;
+         width: 32px;
+         height: 19px;
+         transition: all $transitionSpeed;
+
+         &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #64B9E0;
+            height: 3px;
+            width: 100%;
+            border-radius: 1px;
+         }
+         &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            border-right: 3px solid #64B9E0;
+            border-top: 3px solid #64B9E0;
+            height: 12px;
+            width: 12px;
+         }
+      }      
+
+      @media (max-width: 767px) {
+         font-size: 23px;
+         line-height: 30px;
+         font-weight: 500;
+         padding-right: 0;
+         display: block;
+         margin: 0 20px;
+
+         &_arrow {
+            margin-left: 10px;
+            display: inline-block;
+         }
+
+         // svg {
+         //    margin-left: 15px;
+         // }
+
+      }
+      
+      &:hover {
+         // gap: 50px;
+         padding-right: 15px;
+
+         .map__link_arrow {
+            width: 40px;
+         }
+      }
+   }
+
+   &__btn  {
+      border-radius: 16px;
+      border: 2px solid rgba(66, 191, 248, 0.5);
+      height: 56px;
+      min-width: 247px;
+      font-size: 20px;
+      line-height: 16px;
+      font-weight: 500;
+      min-width: 247px;
+      display: inline-flex;
+      gap: 10px;
+      padding: 0 20px;
+      justify-content: center;
+      align-items: center;
+      padding: 0 48px;
+      width: fit-content;
+      transition-duration: 0.1s;
+      cursor: pointer;
+
+      img {
+         width: 0px;
+         transition-duration: 0.1s;
+         
+      }
+
+      @media (max-width: 575px) {
+         display: none;
+      }
+
+      &:hover {
+         padding: 0 40px 0 35px;
+         
+         @media (max-width: 992px) {
+            padding: 0 30px;
+            
+         }
+         img {
+            margin-left: 16px;
+            width: 31px;
+
+            @media (max-width: 992px) {
+             width: 21px;
+             
+           }
+         }
+     }
+
+     &:hover {
+         background: #6CC6EF;
+         border-color: #6CC6EF;
+     }
+   }
+}

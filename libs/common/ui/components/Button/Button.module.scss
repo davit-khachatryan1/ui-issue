@@ -1,0 +1,49 @@
+@import 'libs/common/ui/scss/indexDemo.scss';
+
+.button {
+    background-color: #015B5B;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+    &:hover{
+        background-color: rgba(#015B5B, .8);
+    }
+    &--narrow {
+        padding: 12px 18px;
+        line-height: 1.5;
+        @include mediaLg {
+            padding: 5px 10px;
+        }
+    }
+    &--wide {
+        width: 100%;
+        padding: 12px 18px;
+        line-height: 1.5;
+        font-size: 16px;
+        background-color: var(--text-color-12);
+        color: var(--btn-text);
+
+        &:hover {
+         
+        }
+    }
+    &--regular {
+        font-family: 'Red Hat';
+        font-weight: 700;
+    }
+    &--invest{
+        padding: 8px 18px;
+        @include titleFont(15px, 1.4);
+        color: #015B5B;
+        border-radius: 100px;
+        // background-color: #F6F8F9;
+        background-color: var(--btn-market-invest);
+        border: 1px solid var(--btn-market-invest-border);
+        // color: var(--text-color);
+        color: var(--btn-market-invest-border);
+        &:hover{
+            background-color: rgba(#015B5B, .1);
+        }
+    }
+}

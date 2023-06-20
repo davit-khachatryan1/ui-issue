@@ -1,0 +1,125 @@
+$transitionSpeed: .2s; //Скорость анимации
+
+$color-title: #FFFFFF;
+$color-text: #A8B3BC;
+$color-accent: #42BFF8;
+
+.realEstateIncome {
+   display: flex;
+   justify-content: center;
+   gap: 0 55px; //72px
+   padding: 0 56px 100px 80px;
+   position: relative;
+
+   @media(max-width: 1440px) {
+      padding: 0 5.55vw 100px;
+   }
+
+   @media(max-width: 1024px) {
+      flex-direction: column-reverse; 
+      align-items: center;      
+      padding: 0 0 100px;
+   }
+   @media(max-width: 575px) {
+      padding-top: 100px;
+      padding-bottom: 72px;
+   }
+
+   &__content {
+      max-width: 522px;
+      flex-grow: 1;
+      
+      @media(max-width: 1200px) {
+         flex-basis: 50%;         
+      }
+      @media(max-width: 1024px) {
+         flex-basis: 100%;  
+         max-width: 755px;
+         text-align: center;    
+         padding: 0 13px;   
+      }
+   }
+   &__title {
+      font-size: 47px !important;
+      line-height: 1.45 !important;
+      color: #ffffff;
+      font-weight: 500;
+      margin-bottom: 15px;
+      max-width: 510px;
+
+      @media(max-width: 1024px) {
+         order: 1;
+         margin-bottom: 36px;
+         padding: 0 35px;
+         text-align: center;
+      }
+
+      @media(max-width: 575px) {
+         font-size: 29px !important;
+         line-height: 44px !important;
+         margin-bottom: 30px; 
+      }
+   }
+   &__text1, 
+   &__text2
+   {
+      font-size: 24px;
+      line-height: 1.33;
+      max-width: 525px;
+      margin: 0;
+
+      @media(max-width: 1024px) {
+         font-size: 2.34375vw;
+         margin: 0 auto;
+      }
+      @media(max-width: 575px) {
+         font-size: 17px;
+         line-height: 23px; 
+         max-width: 358px;  
+      }
+   }
+   &__text1 {
+      color: #D1D5D8;
+      margin-bottom: 16px;
+      font-weight: 300;
+
+      @media(max-width: 1024px) {
+         margin-bottom: 24px;   
+      }
+   }
+   &__text2 {
+      color: #42BFF8; 
+   }
+
+   &__img {
+      max-width: 727px;
+
+      @media(max-width: 1200px) {
+         flex-basis: 50%;         
+      }
+      @media(max-width: 1024px) {
+         flex-basis: 100%;  
+         margin-bottom: 40px;       
+      }
+
+      img {
+         max-width: 100%;
+      }
+   }
+
+   &__decor1 {
+      position: absolute;
+      border-radius: 50%;
+      background: #42BFF8;
+      // filter: blur(191.5px);
+      background: radial-gradient(circle farthest-corner at center center, rgb(175, 230, 255) 0%, transparent 60%);
+      pointer-events: none;
+      width: 1011px;
+      height: 960px;
+      right: -25%;
+      top:-120%;
+      opacity: 0.08;
+      
+   }
+   
+}

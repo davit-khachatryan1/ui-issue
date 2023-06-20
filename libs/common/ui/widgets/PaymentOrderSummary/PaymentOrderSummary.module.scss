@@ -1,0 +1,159 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.summary {
+  @include containerBorder;
+  background: #112536;
+  min-width: 476px;
+  width: 50%;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  @include mediaEx {
+    width: 30%;
+  }
+  @include mediaGt {
+    min-width: 400px;
+  }
+  @include mediaLg{
+    width: 70%;
+    align-self: center;
+  }
+  @include mediaSm {
+    width: 100%;
+    min-width: 320px;
+  }
+  &__title {
+    margin-bottom: 12px;
+    margin-top: 16px;
+    color: #ffffff;
+    @include titleFont(28px, 1.2);
+    @include mediaGt {
+      @include titleFont(26px, 1.2);
+    }
+    @include mediaSm {
+      @include titleFont(24px, 1.2);
+    }
+  }
+  &__orderData {
+    display: grid;
+    grid-template: auto auto / auto auto;
+    row-gap: 8px;
+    padding: 24px 0;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #223341;
+    margin-bottom: 12px;
+  }
+  &__orderProperty {
+    color: #ffffff;
+    margin: 0;
+    @include titleFont(22px, 1.2, 600);
+    @include mediaGt {
+      @include titleFont(20px, 1.2, 600);
+    }
+    @include mediaSm {
+      @include titleFont(18px, 1.2, 600);
+    }
+  }
+  &__orderLocation,
+  &__orderTicker {
+    color: #6488AD;
+    margin: 0;
+    @include titleFont(16px, 1.4, 400);
+    @include mediaGt {
+      @include titleFont(14px, 1.4, 400);
+    }
+    @include mediaSm {
+      @include titleFont(12px, 1.4, 400);
+    }
+  }
+  &__orderQuantity {
+    color: #ffffff;
+    text-align: right;
+    margin: 0;
+    @include titleFont(16px, 1.4, 400);
+    @include mediaGt {
+      @include titleFont(14px, 1.4, 400);
+    }
+    @include mediaSm {
+      @include titleFont(12px, 1.4, 400);
+    }
+  }
+  &__orderPrice {
+    color: #ffffff;
+    margin: 0;
+    text-align: right;
+    @include titleFont(16px, 1.45, 400);
+    @include mediaGt {
+      @include titleFont(14px, 1.45, 400);
+    }
+    @include mediaSm {
+      @include titleFont(12px, 1.45, 400);
+    }
+  }
+  &__total {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  &__totalTag {
+    color: #ffffff;
+    margin: 0;
+    flex-grow: 1;
+    @include titleFont(22px, 1.2);
+    @include mediaGt {
+      @include titleFont(20px, 1.2);
+    }
+    @include mediaSm {
+      @include titleFont(18px, 1.2);
+    }
+  }
+  &__totalPrice {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    margin: 0;
+    flex-direction: column;
+  }
+  &__totalEth {
+    color: #ffffff;
+    margin: 0;
+    @include titleFont(22px, 1.2);
+    @include mediaGt {
+      @include titleFont(20px, 1.2);
+    }
+    @include mediaSm {
+      @include titleFont(18px, 1.2);
+    }
+  }
+  &__totalUsd {
+    @include titleFont(16px, 1.2, 500);
+    color: #516880;
+    @include mediaGt {
+      @include titleFont(14px, 1.2, 500);
+    }
+    @include mediaSm {
+      @include titleFont(12px, 1.2, 500);
+    }
+  }
+  &__totalIcon {
+    @include mediaMd{
+        width: 25px;
+        height: 25px;
+    }
+  }
+  &__button {
+    margin-top: auto;
+    background: #42BFF8;
+    color: #FFFFFF;
+    font-weight: 700 !important;
+    height: 55px;
+
+    &:hover {
+      background: #42BFF8;
+    }
+  }
+}

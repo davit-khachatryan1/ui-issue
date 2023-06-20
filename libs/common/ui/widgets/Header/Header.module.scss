@@ -1,0 +1,103 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.header {
+  // background-color: white;
+  // background-color: var(--background-main);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding-block: 25px;
+  justify-content: space-between;
+  // border-bottom: 1px solid #E9EDF3;
+  // border-bottom: 1px solid var(--background-3);
+  border-bottom: none;
+  @include mediaGt {
+    padding-block: 10px;
+  }
+  &__button { 
+    @include fz(15px);
+    @include mediaGt {
+      display: none;
+    }
+  }
+  &__navbar--desktop {
+    // margin-left: 120px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    width: 65%;
+    flex-grow: 1;
+    ul {
+      justify-self: center;
+      margin-bottom: 0rem; 
+    }
+    div {
+      justify-self: flex-end;
+      
+    }
+    @include mediaGt {
+      margin-left: 0;
+      justify-content: center;
+      flex-grow: 0;
+
+    }
+    @include mediaLg {
+      margin-left: 0;
+    }
+    @include mediaGt {
+      display: none;
+    }
+  }
+  &__mobileMenu {
+    //display: none;
+    position: fixed;
+    transform: translateX(200%);
+    transition: all .6s ease;
+    top: 0px;
+    right: 0;
+    padding: 20px 10px 50px 20px;
+    display: block;
+    width: 50vw;
+    // background-color: white;
+    background-color: var(--background-main);
+    z-index: 10;
+    height: 100%;
+    box-shadow: 0 0px 10px 0px $grayColor;
+
+    @include mediaSm {
+      width: 60vw;
+    }
+  }
+  &__mobileMenu--active {
+    transform: translateX(0);
+  }
+  &__navbar--mobile { 
+    @include mediaGt {
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      z-index: 11;
+      ul {
+        gap: 35px;
+        margin-top: 20px;
+      }
+      li {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #EFF1F2;
+      }
+    }
+  }
+  &__menuButton {
+    display: none;
+    @include mediaGt {
+      cursor: pointer;
+      display: block;
+      z-index: 12;
+
+      rect {
+        pointer-events: none;
+      }
+    }
+  }
+}

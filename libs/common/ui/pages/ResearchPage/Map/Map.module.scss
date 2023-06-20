@@ -1,0 +1,130 @@
+
+$transitionSpeed: .2s; //Скорость анимации
+
+$color-title: #FFFFFF;
+$color-accent: #42BFF8;
+
+.map {
+   min-height: 500px;
+   margin-bottom: -15px;
+   padding-top: 50px;
+   margin-top: 70px;
+   background-image: url("../../../assets/imgs/map.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+
+   @media (max-width: 575px) {
+      margin-bottom: -100px;
+      margin-top: -45px;
+   }
+
+   &__content {
+      width: 100%;
+      position: sticky;
+      top: 100px;
+      text-align: center;
+      padding: 0 10px;
+   }
+   
+   &__title {
+      font-size: 43px;
+      line-height: 1.46;
+      font-weight: 300;
+      max-width: 870px;
+      margin: 0 auto 64px;
+      color: $color-title;
+
+      @media (max-width: 767px) {
+         font-size: 35px;
+         margin: 0 60px 52px;
+      }
+      @media (max-width: 575px) {
+         font-size: 23px;
+         line-height: 1.22;
+         font-weight: 400;
+         max-width: 330px;
+         margin: 0 auto 52px;
+      }
+   }
+
+   &__link  {
+      color: $color-accent !important;
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 1.3125;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;   
+      transition: $transitionSpeed;
+      gap: 27px;
+      padding-right: 23px;
+      margin: 0 60px;
+      &_ar {
+         padding-right: 0;
+         .map__link_arrow {
+            transform: rotate(180deg);
+         }
+      }
+
+      &_arrow {
+         position: relative;
+         // background-color: yellowgreen;
+         width: 32px;
+         height: 19px;
+         transition: all $transitionSpeed;
+
+         &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #64B9E0;
+            height: 3px;
+            width: 100%;
+            border-radius: 1px;
+         }
+         &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            border-right: 3px solid #64B9E0;
+            border-top: 3px solid #64B9E0;
+            height: 12px;
+            width: 12px;
+         }
+      }      
+
+      @media (max-width: 767px) {
+         font-size: 23px;
+         line-height: 28px;
+         font-weight: 400;
+         padding-right: 0;
+         display: block;
+         margin: 0 20px;
+
+         &_arrow {
+            margin-left: 10px;
+            display: inline-block;
+         }
+
+         // svg {
+         //    margin-left: 15px;
+         // }
+
+      }
+      
+      &:hover {
+         // gap: 50px;
+         padding-right: 15px;
+
+         .map__link_arrow {
+            width: 40px;
+         }
+      }
+   }
+}

@@ -1,0 +1,75 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.dropdown {
+   color: inherit;
+   font-size: 14px;
+   position: relative;
+   height: 50px;
+   
+   &__button {
+      background-color: #112536;
+      border-radius: 0.44em; //7px
+      width: 100%;
+      height: 100%;
+      padding: 0.875em 1em; //14px 16px
+      padding-right: 40px;
+      cursor: pointer;
+      color: inherit;
+      outline: none;
+      overflow: hidden;
+      text-align: left;
+
+      &::after {
+         content: "";
+         height: 7px;
+         width: 7px;
+         position: absolute;
+         right: 16px;
+         top: 50%;
+         transform: rotate(45deg) translate(-100%);
+         pointer-events: none;
+         border-bottom: var(--arrow);
+         border-right: var(--arrow);
+      }
+   }
+
+   //dropdown__list
+   &__list {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: calc(100% + 8px);
+      background-color: #112536;
+      border-radius: 7px;
+      padding: 8px;
+      z-index: 3;
+      display: none;
+
+      //dropdown__list-item--visible
+      &--visible {
+         display: block;
+      }
+   }
+
+   //dropdown__list-item
+   &__list-item {
+      padding: 8px;
+      border-radius: 7px;
+      transition: all $transitionSpeed ease-in-out;
+      color: inherit;
+      font-weight: 400;
+      user-select: none;
+      cursor: pointer;
+      
+      
+      &:not(:last-child) {
+         margin-bottom: 4px;
+      }
+      
+      &:hover {
+         background-color: var(--btn-active);
+         color: var(--text-color-mono);
+
+      }
+   }
+}

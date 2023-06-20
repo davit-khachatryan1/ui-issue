@@ -1,0 +1,64 @@
+html, body, applet, object, iframe,
+blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    // font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html,
+body,
+#__next {
+    height: 100%;
+}
+body {
+    // line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    // color: inherit;
+}
+
+.section-basic>.col, .section-basic>.col-1, .section-basic>.col-10, .section-basic>.col-11, .section-basic>.col-12, .section-basic>.col-2, .section-basic>.col-3, .section-basic>.col-4, .section-basic>.col-5, .section-basic>.col-6, .section-basic>.col-7, .section-basic>.col-8, .section-basic>.col-9, .section-basic>.col-auto, .section-basic>.col-lg, .section-basic>.col-lg-1, .section-basic>.col-lg-10, .section-basic>.col-lg-11, .section-basic>.col-lg-12, .section-basic>.col-lg-2, .section-basic>.col-lg-3, .section-basic>.col-lg-4, .section-basic>.col-lg-5, .section-basic>.col-lg-6, .section-basic>.col-lg-7, .section-basic>.col-lg-8, .section-basic>.col-lg-9, .section-basic>.col-lg-auto, .section-basic>.col-md, .section-basic>.col-md-1, .section-basic>.col-md-10, .section-basic>.col-md-11, .section-basic>.col-md-12, .section-basic>.col-md-2, .section-basic>.col-md-3, .section-basic>.col-md-4, .section-basic>.col-md-5, .section-basic>.col-md-6, .section-basic>.col-md-7, .section-basic>.col-md-8, .section-basic>.col-md-9, .section-basic>.col-md-auto, .section-basic>.col-sm, .section-basic>.col-sm-1, .section-basic>.col-sm-10, .section-basic>.col-sm-11, .section-basic>.col-sm-12, .section-basic>.col-sm-2, .section-basic>.col-sm-3, .section-basic>.col-sm-4, .section-basic>.col-sm-5, .section-basic>.col-sm-6, .section-basic>.col-sm-7, .section-basic>.col-sm-8, .section-basic>.col-sm-9, .section-basic>.col-sm-auto, .section-basic>.col-xl, .section-basic>.col-xl-1, .section-basic>.col-xl-10, .section-basic>.col-xl-11, .section-basic>.col-xl-12, .section-basic>.col-xl-2, .section-basic>.col-xl-3, .section-basic>.col-xl-4, .section-basic>.col-xl-5, .section-basic>.col-xl-6, .section-basic>.col-xl-7, .section-basic>.col-xl-8, .section-basic>.col-xl-9, .section-basic>.col-xl-auto {
+    padding-left: 0px;
+    padding-right: 0px;
+}

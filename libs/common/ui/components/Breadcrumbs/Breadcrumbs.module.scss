@@ -1,0 +1,40 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  &__item {
+    @include titleFont(16px, 1.2, 500);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: space-between;
+    cursor: pointer;
+    @include mediaMd {
+      @include titleFont(12px, 1.2, 500);
+    }
+    color: #B2BCC6;
+
+    svg {
+      stroke: #B2BCC6;
+    }
+
+    &:last-child {
+      color: #B2BCC6;
+    }
+  }
+  &__item--payment {
+    color: #6488AD;
+    font-weight: 400;
+
+    svg {
+      stroke: #223341;
+    }
+  }
+  &__item--payment:last-child {
+    // color: black;
+    color: #FFFFFF;
+    cursor: default;
+  }
+}

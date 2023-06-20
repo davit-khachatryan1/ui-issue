@@ -1,0 +1,95 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+
+.filterBtns {
+  gap: 8px;
+  font-family: $Redhat;
+
+  svg {
+    cursor: pointer;
+  }
+  &__view,
+  &__params,
+  & {
+    display: flex;
+    align-items: center;
+  }
+  &__view {
+    gap: 4px;
+    padding: 3px 4px;
+    background-color: #1D374D;
+    border-radius: 10px;  
+    @include mediaLg {
+      padding: 2px 3px;
+      border-radius: 6px;
+    }
+  }
+  &__viewButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: #162C3E;
+    color: #B2BCC6;
+    padding: 10px;
+    cursor: pointer;
+    transition: $transitionSpeed;
+    @include mediaLg {
+      width: 24px;
+      height: min-content;
+      padding: 4px;
+      border-radius: 6px;
+      svg {
+        width: 10px;
+        height: 10px;
+      }
+   }
+
+    &--active:not(.filterBtns__viewButton--active-filter),
+    &:hover
+    {
+      background-color: #42BFF8;
+      color: #FFFFFF;
+    }
+    &--active.filterBtns__viewButton--active-filter {
+      color: #FFFFFF;
+    }
+  }
+  
+  &__params {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    width: 90px;
+    gap: 6px;
+    
+    border-radius: 10px;
+    background-color: #1D374D;
+    color: #B2BCC6;
+    @include mediaLg {
+      width: 80px;
+      border-radius: 6px;
+      height: 24px;
+      svg {
+        width: 10px;
+        height: 10px;
+      }
+    }
+    @include mediaSm{
+    }
+
+    &--active {
+      color: #015B5B;
+    }
+  }
+  &__paramsText {   
+      font-size: 16px;
+      line-height: 1.4; 
+      font-weight: 500;
+      color: #6488AD; 
+  }
+}

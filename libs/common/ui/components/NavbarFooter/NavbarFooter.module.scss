@@ -1,0 +1,48 @@
+@import 'libs/common/ui/scss/indexDemo.scss';
+
+.navbar {
+    @include titleFont(13px, 1.4);
+    @include mediaEx{
+        width: 100%;
+    }
+    @include mediaSm{
+        
+        width: 320px;
+    }
+    &__list{
+        display: flex;
+        gap: 180px;
+        @include mediaEx{
+            width: 100%;
+            gap: unset;
+            justify-content: space-between;
+        }
+        @include mediaMd{
+            display: grid;
+            grid-template: auto /repeat(4, auto);
+            row-gap: 50px;
+        }
+        @include mediaSm{
+            grid-template: auto auto / auto auto;
+            display: grid;
+            row-gap: 50px;
+        }
+    }
+    &__subList {
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__item{
+        font-weight: 400;
+        cursor: pointer;
+        color: rgba(black, .7);
+        &:first-of-type{
+            margin-top: 18px;
+            @include mediaMd{
+                margin-top: 8px;
+            }
+        }
+    }
+}

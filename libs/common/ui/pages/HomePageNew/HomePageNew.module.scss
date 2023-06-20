@@ -1,0 +1,205 @@
+// *{
+//     font-family: "Poppins", sans-serif;
+// }
+// .container_homepage {
+//     background: red;
+//     font-family: "Poppins", sans-serif;
+// }
+
+.transparent {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.wrapper_bg {
+    background: #162C3E;
+}
+
+.wrapper {
+    padding: 50px 80px 0px 80px;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    // background: #162C3E;
+    // background: #1E1E1E;
+    
+    @media (max-width: 1023px) {
+       padding: 40px 40px 0px 40px;      
+    }
+    @media (max-width: 767px) {
+       padding: 0 20px 0px 20px;      
+    }
+}
+
+.skew {
+    
+
+    &__title {
+        font-size: 26.6418px;
+        line-height: 28px;
+        color: #42BFF8;
+        margin-bottom: 17px;
+
+        @media (max-width: 1900px) and (min-width: 720px) {
+            &_wallet_es {
+                font-size: 24px !important;
+            }
+        }
+
+        
+
+        @media (max-width: 720px) {
+            font-size: 16px;
+            line-height: 17px;
+        }
+
+        &_img {
+            margin-bottom: 24px;
+            @media (max-width: 575px) {
+                margin-bottom: 16px;
+            }
+            img {
+                @media (max-width: 575px) {
+                    width: 40px;
+                }
+            }            
+        }
+
+        &_opportunities {
+         padding-top: 20px;
+        }
+    }
+
+    &__title_white {
+        font-weight: 500;
+        font-size: 23.3574px;
+        line-height: 23px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 26px;
+
+        // &_wallet_es {
+        //     font-size: ;
+        // }
+
+        &_ar {
+           flex-direction: row-reverse;
+        }
+        img{
+            margin-right: 12px;
+        }
+
+        @media (max-width: 720px) {
+            font-size: 16px;
+            line-height: 14px;
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 33px;
+        line-height: 42px;
+        color: #FFFFFF;
+        max-width: 805px;
+        margin: 0 auto;
+
+        &_nfts_es {
+            max-width: 845px;
+        }
+
+        @media (max-width: 720px) {
+            font-size: 21px;
+            line-height: 26px;
+            br {
+               display: none;
+            }
+
+            &1 {
+               font-size: 18px;
+               line-height: 27px;
+               max-width: 320px;
+               margin-bottom: -25px;
+            }
+        }
+
+        img {         
+            width: 32px;
+            height: 32px;
+            position: relative;
+            top: 6px;
+
+            @media (max-width: 768px) {
+               width: 21px;
+               height: 21px;
+               top: 4px;
+            }
+        }
+    }
+    &__text1 {
+      @media (min-width: 575px) {
+         br {
+            display: none;
+         }
+      }
+    }
+
+    &__text_small {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.38;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+
+        @media (max-width: 1900px) and (min-width: 720px) {
+            &_wallet_es {
+                font-size: 22px !important;
+            }
+        }
+
+        @media (max-width: 720px) {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    &__sub_text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 1.33;
+        color: rgba(255, 255, 255, 0.75);
+        max-width: 770px;
+        margin: 0 auto;
+
+        @media (max-width: 1900px) and (min-width: 720px) {
+            &_wallet_es {
+                font-size: 22px !important;
+            }
+        }
+        
+
+        @media (max-width: 720px) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &_small {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
+            margin: 43px auto 0;
+            color: #A8B3BC;
+            max-width: 580px;
+
+            @media (max-width: 720px) {
+                font-size: 16px;
+                line-height: 22px;
+                max-width: 330px;
+            }
+        }
+    }
+    
+
+}

@@ -1,0 +1,124 @@
+.skew {
+   position: relative;
+    width: 100vw;
+    // min-height: 60vh;
+
+    // background: url(../../../assets/imgs/SkewBlock.png) no-repeat;
+
+    // &:hover {
+    //     background: url(../../../assets/imgs/SkewBlockActive.png) no-repeat;
+    //     background-size: cover;
+    //     background-position: center center;
+        
+    // }
+
+    // background-size: cover;
+    // background-position: center center;
+    text-align: center;
+  &_bg{
+    opacity: 0.6;
+    transition: opacity 0.8s ease;
+
+  }
+  &_bg:hover{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+    &_bg_wrapper {
+        // min-width: 1732px;
+        min-width: 110vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      
+        img {
+            min-width: 100%;
+
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+          @media (max-width: 1200px){
+            height: 465px;
+          }
+
+          @media (max-width: 720px){
+            height: 265px;
+          }
+
+          @media (max-width: 400px){
+            height: 300px;
+            left: 120vw;
+            transform: translateX(-90%) translateY(10%) rotate(-10deg);
+          }
+        }
+    }
+
+    &_bg_wrapper_big {
+
+        min-width: 110vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        img {
+            min-width: 100%;
+
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            
+            @media (max-width: 575px){
+               left: 110vw;
+               transform: translateX(-86%);
+             }
+        }
+    }
+
+
+
+    &__position {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 850px;
+
+      //   @media (max-width: 1400px) {
+      //   }
+
+        @media (max-width: 992px) {
+            width: 98%;
+            padding: 0 20px;
+        }
+    }
+
+    &__title {
+        // flex-basis: 100%;
+        font-weight: 500;
+        font-size: 26.6418px;
+        line-height: 28px;
+        color: #42BFF8;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        // flex-basis: 100%;
+        font-weight: 600;
+        font-size: 34.6063px;
+        line-height: 42px;
+        color: #FFFFFF;
+        width: 80%;
+        margin: auto;
+
+        img {
+            width: 32px;
+            height: 32px;
+            position: relative;
+            top: 6px;
+        }
+    }
+    
+
+}
+
+

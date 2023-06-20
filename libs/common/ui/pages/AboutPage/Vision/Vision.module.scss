@@ -1,0 +1,113 @@
+
+$color-title: #FFFFFF;
+$color-text: #A8B3BC;
+$color-accent: #42BFF8;
+
+.wrapper {
+   position: relative;
+}
+
+.decor {
+   position: absolute;
+   width: 1243px;
+   height: 1222px;
+   // left: 810px;
+   left: -500px;
+   top: 0px;
+   
+   // background: #64B9E0;
+   opacity: 0.08;
+   // filter: blur(191.5px);
+   background: radial-gradient(circle farthest-corner at center center, #64B9E0 0%, transparent 60%);
+}
+
+.vision {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 261px;
+   padding: 0 80px 0px;
+   padding-left: 100px; //50px
+   gap: 0 75px;
+
+   @media (max-width: 1440px) {
+      gap: 51px 5.21vw;
+   }
+   @media (max-width: 1024px) {
+      justify-content: center;
+      text-align: center; 
+      padding-left: 0;   
+      flex-direction: column-reverse;
+      align-items: center;  
+      padding: 0;
+   }
+   @media (max-width: 575px) {
+      margin-bottom: 166px;
+      margin-top: 80px;
+   }
+
+   &__content {
+      max-width: 550px;
+      // background-color: yellowgreen;
+
+      @media (max-width: 1250px) {
+         max-width: 50%;
+      }
+      @media (max-width: 1024px) {
+         max-width: 550px;
+         text-align: left;         
+         padding: 0 16px 0 23px; // padding: 0 36px 0 43px;
+      }
+      @media (max-width: 575px) {
+         max-width: 100%;
+         margin: 0 auto;
+      }
+   }
+
+   &__title {
+      font-size: 47px !important;
+      line-height: 1.455 !important;
+      font-weight: 500;
+      color:  $color-title;
+      margin-bottom: 10px;
+
+      @media (max-width: 575px) {
+         font-size: 27px !important;
+         line-height: 48px !important;
+         margin-bottom: 12px;
+      }
+   }
+   &__text {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 1.33;
+      color: #D1D5D8;
+
+      @media (max-width: 575px) {
+         font-size: 18px;
+         line-height: 23px;
+         max-width: 320px;
+      }
+   }
+
+   &__img {
+      max-width: 400px;
+      
+      img {
+         max-width: 100%;
+      }      
+      
+      @media (max-width: 575px) {
+         // max-width: 120%;
+         object-position: center;
+         object-fit: contain;
+         max-width: 82.8%;
+         margin-right: auto;
+         // transform: translateX(-10%);
+         // img {
+         //    max-width: 120%;
+         // }
+      }
+
+   }
+}

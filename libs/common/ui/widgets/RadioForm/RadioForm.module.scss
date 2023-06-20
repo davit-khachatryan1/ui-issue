@@ -1,0 +1,70 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.form {
+  width: 100%;
+  &__title {
+    color: #ffffff;
+    @include titleFont(28px, 1.2);
+    margin-bottom: 24px;
+  }
+  &__options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__option {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    height: 84px;
+    padding-inline: 24px;
+    border: 1px solid #223341;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    input::before {
+      transition: border-color 0.3s;      
+    }
+    &:hover {
+      border-color: #42BFF8;      
+      input {
+        &::before {
+          border-color: #42BFF8;
+        }
+      }
+    }
+    @include mediaGt {
+        padding-inline: 16px;
+    }
+  }
+  &__option--chosen {
+    border: 1px solid #42BFF8;
+  }
+  &__optionIcon {
+    margin: 0 32px 0 16px;
+    @include mediaGt {
+      margin: 0 18px 0 12px;
+    }
+  }
+  &__optionLabel {
+    color: #ffffff;
+    pointer-events: none;
+    @include titleFont(18px, 1.2);
+    @include mediaGt {
+      @include titleFont(16px, 1.2);
+    }
+  }
+  &__optionDescription {
+    margin-left: auto;
+    @include titleFont(16px, 1.45, 400);
+    color: #B2BCC6;
+    text-align: right;
+    @include mediaGt {
+      @include titleFont(14px, 1.45, 400);
+    }
+  }
+  &__icon {
+    @include mediaMd{
+        width: 25px;
+    }
+  }
+}

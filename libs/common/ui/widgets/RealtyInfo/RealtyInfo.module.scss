@@ -1,0 +1,227 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.realtyInfo {
+
+   @include containerBorder;
+
+  @include mediaMd {
+  }
+  &__text {
+    margin: 24px 0;
+    @include titleFont(16px, 1.45, 400);
+    // color: $grayColor;
+    color: #6488AD;
+    @include mediaMd {
+      @include titleFont(12px, 1.45, 400);
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  &__list--keystats {
+    flex-direction: row;
+    gap: 55px;
+    .realtyInfo__itemTitle {
+      @include subtitleFont(16px, 1.4);
+      @include mediaMd {
+        @include subtitleFont(12px, 1.4);
+      }
+    }
+    .realtyInfo__itemValue {
+      @include subtitleFont(16px, 1.4, 600);
+      @include mediaMd {
+        @include subtitleFont(12px, 1.4, 600);
+      }
+      // color: black;
+      color: #ffffff;
+    }
+    @include mediaSm {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  &__list--documents {
+    gap: 0;
+    .realtyInfo__itemValue {
+      // color: var(--)
+      @include subtitleFont(14px, 1.4, 500);
+      @include mediaMd {
+        @include subtitleFont(10px, 1.4, 500);
+      }
+      // color: black;
+      color: #ffffff;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    @include titleFont(16px, 1.45, 400);
+    @include mediaMd {
+      @include titleFont(12px, 1.45, 400);
+    }
+  }
+  &__item--documents {
+    display: flex;
+    flex-direction: row;
+    padding: 14px 12px 14px 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid #223341;
+  }
+  &__item--documentsHeader {
+    padding: 0 10px 8px 10px;
+    @include subtitleFont(14px, 1.4, 500);
+    @include mediaMd {
+      @include subtitleFont(10px, 1.4, 500);
+    }
+  }
+  &__itemTitle {
+    // color: $grayColor;
+    color: #6488AD;
+  }
+  &__itemValue {
+    // color: $grayColor;
+    color: #ffffff;
+  }
+  &__cards {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    @include mediaMd {
+        justify-content: space-between;
+    }
+  }
+  &__tabsWrapper {
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+
+  &__tabs {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+    width: max-content;
+    @include mediaMd {
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      overflow-y: visible;
+      justify-content: flex-start;
+    }
+    position: relative;
+
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: var(--background-1-3);
+      z-index: 0;
+      left: 0;
+      bottom: 0px;
+    }
+    overflow-x: scroll;
+    margin-bottom: 16px;
+  }
+  &__tab {
+    padding: 12px;
+    cursor: pointer;
+    transition: $transitionSpeed;
+    @include titleFont(18px, 1.2);
+    // color: $grayColor;
+    color: #6488AD;
+    @include mediaMd {
+      @include titleFont(14px, 1.2);
+    }
+
+    &::after {
+       position: absolute;
+       content: "";
+       width: 100%;
+       height: 1px;
+       // background-color: #015b5b;
+       background-color: var(--background-1-3);
+       bottom: 0;
+       left: 0;
+       transition: $transitionSpeed;      
+      }
+      &--active,
+      &:hover {
+         position: relative;
+      // color: #015b5b;
+         color: #42BFF8;
+         &::after {
+            background-color: #42BFF8;
+            z-index: 2;
+         }
+      }
+  }
+  &__download {
+    cursor: pointer;
+  }
+
+  &__analysis {
+
+   &_item:first-child {
+      padding-bottom: 32px;
+      padding-top: 16px;
+      margin-bottom: 32px;
+      position: relative;
+
+      &::after {
+         content: '';
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         height: 1px;
+         width: 83%;
+         background-color: #223341;
+      }
+   }
+   
+   &_name {
+      font-size: 22px;
+      line-height: 22px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 12px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+   }
+   &_tooltipIcon {
+      background-color: #B2BCC6;
+      border-radius: 50%;
+      path {
+         fill: #FBFBFB;
+      }
+   }
+   &_graf {
+      margin-bottom: 12px;
+
+      img {
+         max-width: 100%;
+      }
+   }
+   &_link {
+      text-align: right;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #6488AD;
+   }
+  }
+}

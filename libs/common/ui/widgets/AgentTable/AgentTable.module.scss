@@ -1,0 +1,319 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.agentTable {
+   font-family: $Redhat;
+   margin-bottom: 155px;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 67px;
+		margin-bottom: 24px;
+	}
+
+	&__title {
+		margin-bottom: 0;
+
+		@include titleFont(26px, 1.2);
+
+		@media (max-width: 350px) {         
+			@include titleFont(22px, 1.2);
+		}
+	}
+
+	&__tooltip {
+		cursor: pointer;
+		background-color: var(--text-color-7);
+		border-radius: 50%;
+      color: red !important;
+      width: 13.33px;
+      height: 13.33px;
+
+		@include mediaLg {
+			width: 12px;
+			height: 12px;
+		}
+	}
+
+	&__table {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	&__headerText {
+		@include titleFont(16px, 1.4, 600);
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 6px;
+		color: #6488AD;
+      
+
+		&:first-of-type {
+			justify-self: start;
+		}
+      &:nth-child(3) {
+         text-align: center;
+         display: block;
+         width: 67px;
+         margin-left: auto;
+         
+         @include mediaLg{
+            margin-left: 0;
+         }
+         @include mediaSm{
+            width: 50px;
+            transform: translateX(-70%);
+         }
+      }
+
+		@include mediaLg {
+			@include titleFont(12px, 1.4, 600);
+			white-space: nowrap;
+
+			&:nth-of-type(3),
+			&:nth-of-type(4) {
+				justify-self: center;
+			}
+
+			&:nth-of-type(5) {
+				display: none;
+			}
+		}
+
+		@include mediaMd {
+			@include titleFont(10px, 1.4, 600);
+
+			&:nth-of-type(4) {
+				display: none;
+			}
+
+			&:nth-of-type(5) {
+				display: none;
+			}
+		}
+
+		@include mediaSm {
+			@include titleFont(14px, 1.2, 500);
+
+			&:nth-of-type(4) {
+				display: none;
+			}
+
+			&:nth-of-type(5) {
+				display: none;
+			}
+		}
+	}
+
+	&__item {
+		width: 100%;
+		display: grid;
+		align-items: center;
+		padding: 17.5px 0;
+		gap: 0 60px;
+		text-align: right;
+		border-bottom: 1px solid var(--background-3-1);
+		position: relative;
+		transition: 0.3s;
+		grid-template:
+			auto / minmax(200px, auto) minmax(150px, auto) minmax(100px, auto) minmax(120px, auto) minmax(150px, auto) minmax(100px, auto);
+
+		@include mediaEx {
+			grid-template: auto / repeat(6, 1fr);
+			gap: 0 30px;
+		}
+
+		@include mediaLg {
+			grid-template: auto / 3fr repeat(4, 2fr);
+
+			&:hover {
+				&:not(:first-of-type) {
+					background-color: rgba($grayColor, 0.1);
+				}
+
+				.agentTable__invest {
+					display: block;
+				}
+			}
+		}
+
+		@include mediaMd {
+			grid-template: auto / 3fr repeat(3, 2fr);
+			gap: 0 10px;
+		}
+
+		@include mediaSm {
+			box-sizing: border-box;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			align-items: center;
+			height: 80px;
+			padding: 23px 0;
+		}
+	}
+
+	&__property {
+		text-align: left;
+
+		@include mediaSm {
+			min-width: 85px;
+		}
+
+	}
+
+	&__propertyTitle {
+		@include titleFont(18px, 1.2, 700);
+		margin-bottom: 4px;
+		color: #FFFFFF !important;
+		word-break: keep-all;
+
+		@include mediaLg {
+			@include titleFont(14px, 1.2, 700);
+		}
+
+		@include mediaMd {
+			@include titleFont(12px, 1.2, 700);
+		}
+
+		@include mediaSm {
+			@include titleFont(12px, 1.2, 500);
+		}
+	}
+
+	&__propertyLocation {
+		@include titleFont(18px, 1.2, 500);
+		color: #6488AD;
+
+		@include mediaLg {
+			@include titleFont(14px, 1.2, 500);
+		}
+
+		@include mediaMd {
+			@include titleFont(12px, 1.2, 500);
+		}
+
+		@include mediaSm {
+			@include titleFont(12px, 1.2, 500);
+		}
+	}
+
+	&__yield {
+		@include titleFont(18px, 1, 600);
+		color: #0091FB;
+      padding: 0.33em 8px 0.23em;
+      display: flex;
+      background: rgba(0, 145, 251, 0.15);
+      border-radius: 9px;
+      justify-self: end;
+
+		@include mediaLg {
+			@include titleFont(14px, 1, 600);
+		}
+
+		@include mediaMd {
+			@include titleFont(16px, 1, 600);
+		}
+
+		@include mediaSm {
+			@include titleFont(12px, 1, 500);
+			min-width: max-content;
+			word-break: keep-all;
+		}
+	}
+
+	&__text {
+		@include titleFont(18px, 1.2, 600);
+      color: #FFFFFF !important;
+
+		@include mediaLg {
+			@include titleFont(14px, 1.2, 600);
+			text-align: center;
+		}
+
+		@include mediaMd {
+			@include titleFont(17px, 1.2, 600);
+			text-align: center;
+		}
+
+		@include mediaSm {
+			@include titleFont(12px, 1.2, 500);
+			min-width: max-content;
+		}
+	}
+
+	&__propertyTitle,
+	&__text {
+		color: var(--text-color-6);
+	}
+
+	&__graph {
+		aspect-ratio: 150 / 51;
+		max-width: 150px;
+		max-height: 51px;
+		min-width: 50px;
+		width: 100%;
+		height: auto;
+		justify-self: flex-end;
+		-webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+		-moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+		-o-transform: matrix(-1, 0, 0, 1, 0, 0);
+		transform: matrix(-1, 0, 0, -1, 0, 0);
+
+		@include mediaLg {
+			@include titleFont(12px, 1.2, 600);
+			display: none;
+		}
+	}
+   path {
+      stroke: rgba(43, 198, 93, 0.5);
+   }
+
+	&__graph--no-profit {
+		path {
+			stroke: rgba(235, 30, 32, 0.5);
+		}
+	}
+
+	&__ticker {
+		@include mediaMd {
+			display: none;
+		}
+	}
+
+	&__invest {
+		@include mediaLg {
+			z-index: 2;
+		}
+
+
+		@include mediaSm {
+			@include titleFont(12px, 1.4, 500);
+
+
+		}
+	}
+}
+
+span .agentTable__invest_btn {
+	background: rgba(66, 191, 248, 0.35);
+   border-radius: 100px;
+   color: #42BFF8;
+   font-size: 15px;
+   line-height: 1.4;
+   font-weight: 700;
+   padding: 8px 18px;
+
+ 
+	@include mediaSm {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 8px 16px;
+		gap: 10px;
+		@include titleFont(12px, 1.4, 500);
+	}
+}

@@ -1,0 +1,186 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.filter {
+   --arrow: 1.5px solid var(--text-color-7);
+
+   display: grid;   
+   align-items: flex-end;
+   grid-template-columns: repeat(3, 220px) 1fr;
+   gap: 1.5em 24px; //24px
+   @include subtitleFont(16px, 1.4, 400, #6488AD);
+   @include mediaLg {
+      @include subtitleFont(12px, 1.4, 400, #6488AD);
+   }
+   margin-bottom: 20px;
+   
+   @include mediaGt {
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-between;
+   }
+   @include mediaMd {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+   }
+   @include mediaSm {
+      grid-template-columns: 1fr;
+      justify-content: center;      
+   }
+   
+   // .filter__item
+   &__item {
+      color: inherit;
+
+      &:nth-child(4) {
+         display: grid;
+         justify-items: end;
+         @include mediaGt {
+            grid-column: 3;
+            justify-items: start;
+         }
+         @include mediaMd {
+            grid-column: auto;
+         }
+      }
+    }
+   // .filter__name
+   &__name {
+      color: inherit;
+      margin-bottom: 4px;
+   }
+   
+   &__range_wrapper,
+   &__btn_list {
+      background-color: #112536;
+      height: 50px; //50px
+      border-radius: 0.44em; //7px
+      color: inherit;    
+   }
+
+   
+
+   // .filter__btns
+   &__btns {
+      display: flex;
+      justify-content: flex-end;
+
+      @include mediaSm {
+         justify-content: center;
+      }
+
+   }
+   
+   // .filter__btn_list
+   &__btn_list {      
+      display: inline-flex;      
+      gap: 8px;
+      padding: 6px 7px;      
+   }
+   
+   // .filter__btn
+   &__btn {
+      border-radius: 0.44em; //7px
+      padding: 0.5em 1.375em 0.5em; //8px 22px
+      @include subtitleFont(16px, 1.4, 600, #6488AD);     
+      transition: .3s;
+      cursor: pointer;
+   
+      &--active,
+      &:hover
+      {
+         background: rgba(66, 191, 248, 0.25);
+         color: #ffffff;
+      }
+
+      @include mediaMd {
+         padding-top: 0.4em; //7px
+      }
+   } 
+
+   &__range_wrapper {
+      padding: 6px 16px 4px;
+   } 
+
+   &__range {
+      margin-bottom: 3px;
+   } 
+
+   &__info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75em; //12px
+      line-height: 1.1;
+   }
+   
+   &__info_min,
+   &__info_max {
+      color: #6488AD;
+   }
+}
+.range {
+   position: relative; 
+   
+   &__line_range {
+      cursor: pointer;
+      width: 100%;
+      height: 5px;
+      transition: all 0.3s ease-in-out;
+      -webkit-appearance: none;
+      background: #223341;
+      border-radius: 25px;
+      position: relative;
+      z-index: 2;
+
+      &::-webkit-slider-thumb {
+         -webkit-appearance: none;
+         width: 19px;
+         height: 19px;
+         border-radius: 50%;
+         background-color: #42BFF8;
+         border: 3px solid #3C5061;
+         cursor: pointer;
+         position: relative;
+         z-index: 3;
+      }
+
+   }
+   &__line_null,
+   &__line_full {
+      position: absolute;
+      height: 5px;
+      top: 50%;
+      display: none;
+   }
+   
+   &__line_null {
+      background-color: var(--rangeNull);
+      border-radius: 10px;
+      left: 0;
+      right: 5px;
+      //transition: all 1ms ease-in-out;
+   }
+   &__line_full {
+      background-color: var(--rangeNull);
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      left: -1px;
+      //transition: all 1ms ease-in-out;
+   }
+
+   // .block9__line-value
+   &__line_value {
+      opacity: 0;
+      z-index: 10;
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #6488AD;
+      font-size: 0.75em; //12px
+      line-height: 1.1;
+      transition: opacity 0.3s;
+      text-align: center;
+   }
+   &:hover .range__line_value{
+      opacity: 1;
+   }   
+}

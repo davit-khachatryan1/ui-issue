@@ -1,0 +1,69 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.card { 
+    @include containerBorder;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 120px;
+    min-height: 100px;
+    position: relative;
+    border: 1px solid #223341;
+    color: #6488AD;
+    
+    &__text {
+        @include titleFont(16px, 1.45, 400);
+        color: #6488AD;
+        text-align: center;
+        transition: $transitionSpeed;
+        
+        
+        @include mediaSm{
+            opacity: 0;
+            transition: opacity .3s;
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transform: translateX(-50%);
+            
+            @include titleFont(12px, 1.45, 400);
+            border-radius: 10px;
+        }
+    }
+
+    svg {
+      transition: $transitionSpeed;
+    }
+    
+    @media (max-width: 575px) {
+       &:active,
+       &:hover{      
+            svg {
+               opacity: 0;
+            }
+            .card__text{
+               opacity: 1;
+           }
+       }      
+    }
+
+    @include mediaMd{
+        min-width: 80px;
+        min-height: 80px;
+        padding: 10px;
+    }
+    @include mediaSm{
+        min-width: 60px;
+        min-height: 40px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,34 @@
+@import '../../scss/indexDemo.scss';
+
+.payment {
+    padding-bottom: 110px;
+    padding-top: 74px;
+    @include mediaLg{
+        padding-bottom: 40px;
+        padding-top: 60px;
+    }
+    &__disclaimer {
+        @include subtitleFont(16px, 1.4, 400);
+        // color: $grayColor;        
+        max-width: 500px;
+        padding-top: 24px;
+        margin: 0;
+        @include mediaLg{
+            margin: 0 auto;
+            text-align: center;
+        }
+        @include mediaMd{
+            max-width: 320px;
+            @include subtitleFont(12px, 1.4, 400);
+        }
+        color: #6488AD !important;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        @include mediaLg{
+            flex-direction: column;
+        }
+    }
+}

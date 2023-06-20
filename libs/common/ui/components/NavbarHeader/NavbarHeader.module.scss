@@ -1,0 +1,122 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+@import "libs/common/ui/scss/vars2.scss";
+
+.navbar {
+  //  padding-top: 42px; ?
+
+  @include mediaGt{
+    padding-top: 42px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 48px;
+    @include titleFont(16px, 1.2);
+    @include mediaLg{
+      gap: 30px;
+    }
+    @include mediaGt {
+      @include titleFont(14px, 1.2);
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 100%;
+    }
+  }
+  &__item {
+    cursor: pointer;
+    // color: #000;
+    color:var(--text-color);
+    transition: color 0.1s;
+    &--active,
+    &:hover {
+      // color: rgba(black, 0.7);
+      color:var(--hover-color);
+      // color: 
+    }
+  }
+//   &__mobileButton{
+//     display: none;
+//     @include mediaGt {
+//       display: block;
+//       margin-top: 5px;
+//       margin-right: 10px;
+//       rect:nth-of-type(1){
+//         position: absolute;
+//         margin-left: 50%;
+//         margin-right: 50%;
+//         transform: translate(-50%, -50%);
+//         rotate: -45deg;
+//         // translate: -11% 58%;
+//       }
+//       rect:nth-of-type(2){
+//         display: none;
+//       }
+//       rect:nth-of-type(3){
+//         position: absolute;
+//         margin-left: 50%;
+//         margin-right: 50%;
+//         transform: translate(-50%, -50%);
+//         rotate: 45deg;
+//         // translate: 59% -30%;
+//       }
+//     }
+//   }
+  &__btns {
+    &_dropdown{
+      &_menu {
+        @include mediaGt {
+          left: 50% !important;
+          transform: translateX(-50%);
+        }
+      }
+      @include mediaLg {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 11px;
+      }
+      
+    }
+    &_btn_theme{
+      @include mediaLg {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      
+      div {
+        @include mediaLg {
+          margin: 0px;
+        }
+      }
+      // margin-top: 11px;
+    }
+    &_btn{
+      @include mediaLg {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      a {
+        @include mediaSm {
+          padding: 15px 15px;
+          font-size: 13px;
+        }
+      }
+
+      
+      
+      // flex-basis: 100%;
+    }
+    @include mediaLg {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+
+// .fa-bars:before{
+//   color: red;
+//   content: "\f00d" !important;
+// }

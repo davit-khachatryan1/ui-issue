@@ -1,0 +1,180 @@
+.wrapper {
+  position: relative;
+}
+
+.decor {
+  position: absolute;
+  width: 943px;
+  height: 722px;
+  // left: 810px;
+  bottom: -50%;
+  right: -300px;
+  
+  // background: #64B9E0;
+  opacity: 0.08;
+  // filter: blur(191.5px);
+  background: radial-gradient(ellipse farthest-corner at center center, #64B9E0 0%, transparent 60%);
+}
+.AboutWhyDequity{
+   max-width: 1440px;
+   margin: 0 auto;
+   text-align: center;
+   padding: 0 25px 238px;
+
+   @media (max-width: 575px) {
+      padding-bottom: 128px;
+   }
+
+   &__title {
+      font-size: 47px !important;
+      line-height: 1.45;
+      font-weight: 500;
+      margin-bottom: 22px;
+
+      @media (max-width: 575px) {
+         font-size: 36px !important;
+         line-height: 1.5;
+         margin-bottom: 13px;
+      }
+   }
+   &__text {
+      max-width: 760px;
+      margin: 0 auto 77px;
+      font-size: 24px;
+      line-height: 1.33;
+      font-weight: 300;
+
+      @media (max-width: 575px) {
+         font-size: 18px;
+         line-height: 23px;
+         max-width: 340px;
+         margin-bottom: 74px;
+      }
+   }
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 385px);
+      justify-content: center;
+      gap: 67px;
+
+      @media (max-width: 1350px) {
+         grid-template-columns: repeat(2, minmax(342px,385px));
+         gap: 4.96vw;
+      }
+      @media (max-width: 750px) {
+         grid-template-columns: minmax(342px,385px);
+         gap: 25px;
+      }
+      @media (max-width: 575px) {
+         grid-template-columns: minmax(200px,385px);
+         gap: 16px;
+      }
+   }
+
+   &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(277.8deg, rgba(56, 95, 125, 0.5) 5.07%, rgba(41, 71, 95, 0.285) 95.6%);
+      border: 1px solid rgba(96, 193, 248, 0.15);
+      border-radius: 24px;
+      height: 133px;
+      padding: 7px 10px 7px 42px;
+
+      @media (max-width: 1000px) {
+         padding: 7px 10px 7px 32px;
+      }
+      @media (max-width: 750px) {
+         height: 106px;         
+      }
+      @media (max-width: 389px) {
+         padding: 7px 2.57vw 7px 8.22vw;
+      }
+
+      &:nth-child(1) {
+         .AboutWhyDequity__item_text {
+            max-width: 217px;
+
+            @media (max-width: 750px) {
+               max-width: 170px;
+            }
+         }
+      }
+      &:nth-child(4) {
+         .AboutWhyDequity__item_img {
+            transform: translateX(-45px);
+
+         }
+         @media (max-width: 1350px) {
+            .AboutWhyDequity__item_text {
+               max-width: 200px;
+            }
+            .AboutWhyDequity__item_img {
+               transform: translateX(-35px);
+            }
+         }
+         @media (max-width: 750px) {
+            .AboutWhyDequity__item_text {
+               max-width: 170px;
+            }
+            .AboutWhyDequity__item_img { 
+               transform: translateX(0px);   
+            }
+         }
+      }
+      &:nth-child(5) {
+         .AboutWhyDequity__item_img {
+            transform: translateX(-50px);
+
+            @media (max-width: 1350px) {
+               transform: translateX(-40px);
+            }
+            @media (max-width: 750px) {
+               transform: translateX(0px);
+            }
+         }
+      }
+
+      &_text {
+         font-size: 21px;
+         line-height: 1.43;
+         font-weight: 300;
+         max-width: 243px;
+         text-align: left;
+
+         @media (max-width: 1000px) {
+            font-size: 2.1vw;
+         }
+         @media (max-width: 750px) {
+            font-size: 15px;
+            max-width: 180px;
+         }
+      }
+      &_img {
+         max-width: 77px;
+         transform: translateX(-30px);
+
+         @media (max-width: 1350px) {
+            transform: translateX(-20px);
+         }
+         @media (max-width: 750px) {
+            transform: translateX(0);
+            max-width: none;
+            width: 100px;
+            text-align: left;
+
+            img {
+               width: 90%;
+            }
+         }
+         @media (max-width: 389px) {
+            width: 20.56vw;
+
+            img {
+               width: 110%;
+            }
+         }
+      }
+   }
+}

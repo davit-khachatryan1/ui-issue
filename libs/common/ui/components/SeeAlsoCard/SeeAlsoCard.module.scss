@@ -1,0 +1,81 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.card {
+  border: 1px solid #223341;
+  border-radius: 7px;
+  min-width: 295px;
+  height: 174px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 41px 16px 24px;
+  &__info {
+    display: grid;
+    gap: 4px;
+  }
+  &__item {
+   display: flex;
+   justify-content: space-between;   
+  }
+  &__name {
+   color: #ffffff;
+   
+    @include titleFont(18px, 1.2);
+    @include mediaMd {
+      @include titleFont(14px, 1.2);
+    }
+  }
+  &__location,
+  &__currency,
+  &__percent {
+    @include titleFont(16px, 1.2, 500);
+    @include mediaMd {
+      @include titleFont(14px, 1.2, 500);
+    }
+  }
+  &__percent,
+  &__currency {
+    text-align: right;
+  }
+  &__location {
+    color: #ffffff;
+  }
+
+  &__currency {
+    padding-top: 4px;
+    color: #516880;
+  }
+  &__percent {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 8px;
+    justify-self: flex-end;
+    justify-content: center;
+    color: #F6F8F9;
+    border-radius: 9px;
+    align-self: flex-start;
+    @include mediaMd {
+      padding: 3px 5px;
+    }
+  }
+  &__percent--pos {
+    background-color: #09D0B8;
+  }
+  &__percent--neg {
+    background-color: #FF0066;
+    .card__percentTip {
+      transform: rotate(180deg);
+    }
+  }
+  &__graph--neg {
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    path {
+      stroke: #FF0066;
+    }
+  }
+}

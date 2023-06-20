@@ -1,0 +1,42 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.home {
+  margin: 54px 0 64px;
+  /* display: grid;
+    grid-template: auto auto / 3fr 393px; */
+  gap: 12px;
+  align-items: flex-start;
+  // justify-items: start;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  &__seeAlso {
+   overflow: hidden;
+   width: 100%;
+  }
+  &__realty--desktop {
+    @include mediaLg {
+        display: none;
+    }
+  }
+  &__realty--tablet {
+    display: none;
+    @include mediaLg {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+    }
+    @include mediaMd{
+      flex-direction: column;
+    }
+  }
+}
+
+.home div,.home h1,.home h2,.home h3,.home h4,.home h5,.home h6,.home p {
+  // color : var(--text-color-temp);
+  // color : #000;
+}
+
+.home  p {
+  margin-bottom: 0rem;
+}

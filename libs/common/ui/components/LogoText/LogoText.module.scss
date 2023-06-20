@@ -1,0 +1,11 @@
+@import 'libs/common/ui/scss/indexDemo.scss';
+
+.logoText {
+    @include ClarkNova;
+    cursor: pointer;
+    color: #015B5B;
+    
+    @include mediaLg{
+        @include fz(20px);
+    }
+}

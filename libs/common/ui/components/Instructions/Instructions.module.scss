@@ -1,0 +1,85 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.instructions {
+  @include containerBorder;
+
+  &__title {
+    // color: $grayColor;
+    color: #6488AD;
+    @include titleFont(18px, 1.2);
+    @include mediaSm {
+      @include titleFont(16px, 1.2);
+    }
+    margin-bottom: 16px;
+  }
+  &__table {
+    display: flex;
+    gap: 18px;
+  }
+  &__number {
+    @include subtitleFont(18px, 1.2, 500);
+    min-width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #1D374D;
+    color: #ffffff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    @include mediaMd {
+      @include subtitleFont(14px, 1.2, 500);
+    }
+  }
+  &__instructionsTitle {
+   color: #ffffff;
+    @include titleFont(16px, 1.2, 500);
+    @include mediaMd {
+      @include titleFont(12px, 1.2, 500);
+    }
+  }
+  &__instructionsInfo {
+    @include titleFont(16px, 1.45, 400);
+    color: #6488AD;
+    @include mediaMd {
+      @include titleFont(12px, 1.45, 400);
+    }
+
+    a {
+      color: #42BFF8;
+    }
+  }
+
+  &__numeration {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  &__item {
+    /* display: grid;
+        grid-template: auto auto / 35px 571px;
+        gap: 0px 28px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 18px;
+    position: relative;
+    padding-bottom: 28px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__line {
+    position: absolute;
+    content: "";
+    left: 17px;
+    width: 1px;
+    height: 100%;
+    background-color: var(--background-4);
+  }
+  /* &__empty {
+        height: 18px;
+    } */
+}

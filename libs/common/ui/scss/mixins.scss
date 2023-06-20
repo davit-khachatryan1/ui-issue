@@ -1,0 +1,63 @@
+@mixin ClarkNova {
+    font-family: 'Clarknova';
+    font-size: 29px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+@mixin titleFont($fz, $lh, $fw: 700) {
+    font-family: $Redhat;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+}
+@mixin subtitleFont($fz, $lh, $fw: 400, $color: $grayColor) {
+    font-family: $Inter;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+    font-weight: $fw;
+}
+
+@mixin fz ($fz){
+    font-size: $fz;
+}
+
+@mixin containerBorder {
+   background-color: #162C3E;
+   border: 1px solid #223341;
+   // background-color: rgb(243, 183, 104);
+   // border: 1px solid green;
+    border-radius: 10px;
+    padding: 24px;
+    
+    @include mediaMd{
+        padding: 16px;
+    }
+}
+
+//media
+@mixin mediaEx{
+    @media (max-width: 1396px) {
+        @content;
+    }
+}
+@mixin mediaGt{
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin mediaLg{
+    @media (max-width: 996px) {
+        @content;
+    }
+}
+@mixin mediaMd{
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin mediaSm{
+    @media (max-width: 576px) {
+        @content;
+    }
+}

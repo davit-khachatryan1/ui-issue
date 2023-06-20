@@ -1,0 +1,66 @@
+
+$transitionSpeed: .2s; //Скорость анимации
+
+$color-title: #FFFFFF;
+$color-accent: #42BFF8;
+
+.map {
+   font-family: 'Gilroy';
+   min-height: 500px;
+   margin-bottom: -15px;
+   background-image: url("../../../assets/imgs/map.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+
+   @media (max-width: 575px) {
+      margin-bottom: -100px;
+   }
+
+   &__content {
+      width: 100%;
+      position: sticky;
+      top: 100px;
+      text-align: center;
+   }
+   
+   &__title {
+      font-size: 43px;
+      line-height: 1.18;
+      font-weight: 400;
+      max-width: 870px;
+      margin: 0 auto 49px;
+      color: $color-title;
+      max-width: 835px;
+
+      @media (max-width: 767px) {
+         font-size: 35px;
+         margin: 0 60px 52px;
+      }
+      @media (max-width: 575px) {
+         font-size: 24px;
+         margin: 0 10px 52px;
+      }
+   }
+
+   &__text2 {
+      color: $color-accent !important;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 1.1875;
+      margin-bottom: 75px;
+   }
+
+   &__link  {
+      background: #42BFF8;
+      border-radius: 16px;
+      height: 56px;
+      width: 247px;
+      font-size: 20px;
+      line-height: 16px;
+      min-width: 247px;
+      display: inline-flex;
+      padding: 0 48px;
+      align-items: center;
+   }
+}

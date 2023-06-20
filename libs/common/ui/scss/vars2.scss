@@ -1,0 +1,177 @@
+.theme-dark {
+    --background-main: #0a212e;
+    --background-modal: #194056;
+    --background-1: #194056;
+    --background-1-2: #194056;
+    --background-1-3: #194056;
+    --background-2: #173445;
+    --background-3: #112835;
+    --background-3-1: #112835;
+    --background-3-2: #112835;
+    --background-4: #516880;
+    --background-5: #173445;
+    --background-6: #0a212e;
+    --border: #194056;
+    --border-2: #5FA4C3;
+    --border-3: transparent;
+    --border-4: none;
+    --border-orderSummare: #194056;
+    --border-modal-input: transparent;
+    
+    --text-color: #ffffff;
+    --text-color-temp: #000;
+    --text-color-inverted: #ffffff;
+    --text-color-inverted-2: #000;
+    --text-color-inverted-links: #fff;
+    --text-color-mono: #fff;
+    
+    --text-color-2: #b4bac0;
+    --text-color-3: #fff;
+    --text-color-4: #ccc6c6;
+    --text-color-5: #B2BCC6;
+    --text-color-6: #F6F8F9;
+    --text-color-7: #516880;
+    --text-color-8: #5FA4C3;
+    --text-color-9: #B2BCC6;
+    --text-color-10: #F6F8F9;
+    --text-color-11: #F6F8F9;
+    --text-color-12: #5FA4C3; 
+    --text-color-13: #B2BCC6;
+    --text-color-14: #B2BCC6;
+    --text-color-15: #173445;
+    --text-color-16: #516880;
+    
+    --pagi-btn-bg: #173445;
+    --pagi-btn-text-hover: #F6F8F9;
+    
+    --toggle-dark-background: #173445;
+    --toggle-light-background: none;
+    
+    --color-burger: #ffffff;
+    --hover-color: #5FA4C3;
+    --btn-market-invest: transparent;
+    --btn-market-invest-border: #0ba9aa;
+    --hover-btn-text: #0ba9aa;
+    --hover-btn-modal: #42809F;
+    
+    --payment-hover-border: #afd2e1;
+    --payment-hover-bg: #173445;
+
+    --btn-backG: #173445;
+    --btn-active: #5FA4C3;
+    --btn-active-2: #516880;
+    --btn-filter-param: transparent;
+    --filter-icon-title: #516880;
+    
+    --counter-num: #F6F8F9;
+    --counter-btn: transparent;
+    
+    --rangeNull: #516880;
+    --rangeСircle: #5FA4C3;
+    
+    --btn-text: #F6F8F9; 
+    
+    --graf-line: #B2BCC6;
+    --graf-field: #5FA4C3;
+    --graf-text: #F6F8F9;
+
+    --theme-svg: #28303F;
+    
+    /* --logo-url: url("/assets/imgs/dark_logo.svg"); */
+    // --logo-url: url("../assets/imgs/house-1.jpg");
+
+    /* --left-background-gradient: url("../assets/imgs/Ellipse\ 6.png"); */
+    --left-background-gradient: none;
+
+    --btn-grad-bg: linear-gradient(136.13deg, #76C0DF -0.07%, #184D6B 101.73%);
+  }
+  
+  .theme-light {
+     --background-main: #ffffff;
+     --background-modal: #ffffff;
+     --background-1: #194056;
+     --background-1-2: #fff;
+     --background-1-3: #f6f8f9;
+     --background-2: #173445;
+     --background-3: #fff;
+    --background-3-1: #EFF1F2;
+    --background-3-2: #F5F5F5;
+    --background-4: #F6F8F9;
+    --background-5: #ffffff;
+    --background-6: #f6f8f9;
+    --border: #EFF1F2;
+    --border-2: #f6f8f9;
+    --border-3: #015B5B;
+    --border-4: #EFF1F2;
+    --border-orderSummare: #B2BCC6;
+    --border-modal-input: #194056;
+    
+    --text-color: #0a212e;
+    // --text-color-temp: #fff;
+    --text-color-inverted: #ffffff;
+    --text-color-inverted-links: #0a212e;
+    --text-color-mono: #000;
+    
+    --text-color-2: #516880;
+    --text-color-3: #015b5b;
+    --text-color-4: #333333;
+    --text-color-5: #516880;
+    --text-color-6: #000000;
+    --text-color-7: #B2BCC6;
+    --text-color-8: #B2BCC6;
+    --text-color-9: #0a212e;
+    --text-color-10: #0a212e;
+    --text-color-11: #516880;
+    --text-color-12: #015B5B;
+    --text-color-13: #015B5B;
+    --text-color-14: #333333;
+    --text-color-15: #0a212e;
+    --text-color-16: #0a212e;
+    
+    --pagi-btn-bg: #f6f8f9;
+    --pagi-btn-text-hover: #F3F6F9;
+    
+    --toggle-dark-background: none;
+    --toggle-light-background: #398485;
+    
+    --color-burger: #398485;
+    --hover-color: #398485;
+    --btn-market-invest: #F6F8F9;
+    --btn-market-invest-border: transparent;
+    --hover-btn-text: #0ba9aa;
+    --hover-btn-modal: #29575A;
+
+    --payment-hover-border: #80adad;
+    --payment-hover-bg: transparent;
+
+    --btn-backG: #F3F6F9;
+    --btn-active: #ffffff;
+    --btn-active-2: #D0EEEE;
+    --btn-filter-param: #ffffff;
+    --filter-icon-title: #015B5B;
+
+    --counter-num: #015B5B;
+    --counter-btn: #ffffff;
+    
+    --rangeNull: #D9E3ED;
+    --rangeСircle: #015B5B;
+    
+    --btn-text: #ffffff;
+    
+    --graf-line: #DFE1E2;
+    --graf-field: #D0EEEE;
+    --graf-text: #015B5B;
+
+    --theme-svg: #B2BCC6;
+
+    // --logo-url: url("../assets/imgs/logo-light.svg");
+
+    --left-background-gradient: linear-gradient(
+      270deg,
+      rgba(237, 237, 237, 0) 0%,
+      rgba(118, 192, 223, 0.2) 93%
+    );
+    
+    --btn-grad-bg: #fff;
+   }
+   

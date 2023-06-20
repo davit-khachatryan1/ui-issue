@@ -1,0 +1,45 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.comingSoon {
+   margin-bottom: 64px;
+  width: auto;
+  &__title {
+   @include titleFont(28px, 1.2);
+   @include mediaLg {
+     @include titleFont(22px, 1.2);
+   }
+   @include mediaMd {
+     @include titleFont(16px, 1.2);
+   }
+      margin-bottom: 17px;
+      color: #FFFFFF;
+  }
+  &__cards {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    width: 100%;
+
+    &::-webkit-scrollbar {
+      height: 4px;
+   }
+   &::-webkit-scrollbar-track {
+      background: transparent;
+   }
+   &::-webkit-scrollbar-thumb {
+      background-color: var(--border-2);
+      border-radius: 3px; 
+      border-color: transparent;
+   }
+
+    @include mediaMd {
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}

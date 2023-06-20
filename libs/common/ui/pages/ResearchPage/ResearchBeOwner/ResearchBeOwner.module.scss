@@ -1,0 +1,146 @@
+.ResearchBeOwner{
+  position: relative;
+  height: max-content;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media(max-width: 990px) {
+     padding: 0;
+   }
+  //  @media(max-width: 400px) {
+    @media(max-width: 600px) {    
+     padding: 0;
+   }
+  .ResearchBeOwner:hover &_bg {
+    opacity: 1;
+    transition: opacity 0.8s ease;
+  }
+  &_bg{
+    opacity: 0.4;
+    transition: opacity 0.8s ease;
+
+    object-fit: fill;
+    object-position: center;
+
+    @media (max-width: 575px) {
+      // transform: scale(1.5);
+      // transform: scale(1.1);
+      min-width: 120%;
+   }
+  }
+
+  &__BeOwnerTitle{
+    color: #42BFF8;
+    font-size:26.64px;
+    line-height: 28px;
+    display: flex;
+    justify-content: center;
+    // padding-top: 130px ;
+    padding-top: 150px;
+    margin-bottom: 23px;
+    // @media(max-width: 400px) {
+    @media(max-width: 600px) {  
+      margin-bottom: 22px;
+      padding-top: 110px;
+      font-size: 16px;
+      line-height: 15px;
+    }
+  }
+  &__BeOwnerText{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 44px;
+    justify-content: center;
+    text-align: center;
+    width: 782px;
+    margin-bottom: 29px;
+    margin: 0 auto 29px auto;
+
+    @media(max-width: 915px) {
+      padding: 0px 20px 0px 0px;
+      margin: 0 auto 29px;
+      font-size: 21px;
+      line-height: 27px;
+      font-weight: 400;
+    }
+
+    @media(max-width: 900px) {
+      max-width: 100%;
+    }
+    // @media (max-width: 400px){
+    @media(max-width: 600px) {  
+      max-width: 100vw;
+      width: auto;
+      padding: 0;
+      br {
+         display: none;
+      }
+    }
+   
+    &__size{
+      width: 800px;
+      margin: auto;
+      position: relative;
+
+      @media(max-width: 900px) {
+        width: 600px;
+      }
+
+      @media(max-width: 750px) {
+        width: 500px;
+      }
+
+      @media(max-width: 601px) {
+        width: 400px;
+        max-width: 90vw;
+      }
+
+      @media(max-width: 400px) {
+        margin:0 auto ;
+        max-width: 85vw;
+        
+
+
+      }
+      @media(max-width: 360px) {
+        margin:0 auto ;
+        max-width: 92vw;
+        
+
+
+      }
+    }
+  }
+  &__BeownerLittletxt{
+    font-size: 27px;
+    line-height: 40px;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+
+    margin: auto;
+
+    // padding-bottom: 100px;
+    padding-bottom: 80px;
+    width: 756px;
+
+    @media(max-width: 900px) {
+      max-width: 100%;
+    }
+
+    // @media (max-width: 400px){
+    @media(max-width: 600px) {  
+      padding: 0 10px 70px;
+      font-size: 16px;
+      width: 316px;
+      line-height: 22px;      
+    }
+  }
+
+}
+

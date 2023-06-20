@@ -1,0 +1,58 @@
+@import "fonts.scss";
+@import "mixins.scss";
+@import "vars.scss";
+@import "vars2.scss";
+
+.container {
+	padding-left: 50px;
+	padding-right: 50px;
+
+	@include mediaEx {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+
+	@include mediaMd {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	@include mediaSm {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.container--half {
+	max-width: calc(65% - 10px);
+	flex-grow: 1;
+
+	@include mediaLg {
+		max-width: 100%;
+	}
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.column--narrow {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	max-width: calc(35% - 10px);
+
+	@include mediaLg {
+		max-width: 320px;
+	}
+}
+
+.column--fs {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+}

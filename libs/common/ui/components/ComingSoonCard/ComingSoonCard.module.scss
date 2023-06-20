@@ -1,0 +1,95 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.card {
+
+  background: #1D374D;
+  border: 1px solid #223341;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
+  border-radius: 7px;
+  width: 295px;
+  height: 154px;
+  min-width: 295px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 24px;
+  &__info {
+   //  display: grid;
+   //  grid-template: auto auto / 1fr 1fr;
+   //  flex-grow: 1;
+  }
+  &__top {
+   margin-bottom: 24px;
+   display: flex;
+   justify-content: space-between;
+  }
+  &__name {
+   
+   @include subtitleFont(18px, 1.2, 600);
+   @include mediaMd {
+      @include subtitleFont(14px, 1.2, 600);
+   }
+   color: #ffffff !important;
+   margin-bottom: 4px;
+  }
+  &__item {
+   display: flex;
+   justify-content: space-between;
+  }
+  &__item + &__item {
+   margin-top: 8px;
+  }
+  &__currency {
+    @include subtitleFont(16px, 1.2, 400);
+    @include mediaMd {
+      @include subtitleFont(14px, 1.2, 400);
+    }
+    text-align: right;
+  }
+  &__location {
+    color: #6488AD !important;
+    @include subtitleFont(18px, 1.2, 400);
+    @include mediaMd {
+      @include subtitleFont(14px, 1.2, 400);
+    }
+  }
+  &__item_name {
+   color: #6488AD !important;
+   @include subtitleFont(16px, 1.4, 400);
+   @include mediaMd {
+     @include subtitleFont(14px, 1.4, 400);
+   }
+  }
+
+  &__currency {
+    color: #FFFFFF;
+  }
+  &__percent {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px 12px;
+    justify-self: flex-end;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 9px;
+    align-self: flex-start;
+    @include titleFont(18px, 1.2, 500);
+    @include mediaMd {
+      @include titleFont(14px, 1.2, 500);
+    }
+    @include mediaMd {
+      padding: 3px 5px;
+    }
+  }
+  &__percent--pos {
+    background-color: #09D0B8;
+  }
+  &__percent--neg {
+    background-color: #FF0066;
+    .card__percentTip {
+      transform: rotate(180deg);
+    }
+  }
+}

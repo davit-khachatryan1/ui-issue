@@ -1,0 +1,128 @@
+$transitionSpeed: .2s; //Скорость анимации
+
+$color-title: #FFFFFF;
+$color-text: #A8B3BC;
+$color-accent: #42BFF8;
+
+.MiamiRealEstate {
+   display: flex;
+   justify-content: center;
+   gap: 0 69px; //72px
+   padding: 170px 91px 100px 82px;
+   position: relative;
+
+   @media(max-width: 1440px) {
+      padding: 170px 6.32vw 100px 5.69vw;
+   }
+   
+   @media(max-width: 1024px) {
+      flex-direction: column-reverse; 
+      justify-content: center;
+      padding: 180px 27px 180px;
+   }
+   @media(max-width: 575px) {
+      padding: 100px 0 24px;
+   }
+
+   &__content {
+      max-width: 543px;
+      
+      @media(max-width: 1200px) {
+         flex-basis: 50%;         
+      }
+      @media(max-width: 1024px) {
+         flex-basis: 100%;  
+         padding: 0 14px;
+         max-width: none; 
+         text-align: center; 
+         margin: 0 auto;   
+      }
+      @media(max-width: 575px) {
+         padding: 0 36px;    
+      }
+   }
+   &__title {
+      font-size: 47px !important;
+      line-height: 1.45 !important;
+      color: #ffffff;
+      font-weight: 500;
+      margin-bottom: 21px;
+
+      @media(max-width: 1024px) {
+         order: 1;
+         margin: 0 auto 43px;
+         text-align: center;
+      }
+
+      @media(max-width: 575px) {
+         font-size: 29px !important;
+         line-height: 44px !important;
+         font-weight: 400; 
+      }
+   }
+   &__text1, 
+   &__text2
+   {
+      font-size: 24px;
+      line-height: 1.33;
+      
+      @media(max-width: 1024px) {
+         max-width: 734px;
+      }
+      @media(max-width: 575px) {
+         font-size: 17px;
+         line-height: 23px; 
+         max-width: 325px;   
+      }
+   }
+   &__text1 {
+      color: #D1D5D8;
+      margin: 0 0 16px;
+      font-weight: 300;
+
+      @media(max-width: 575px) {
+         max-width: 320px;   
+         margin-bottom: 24px;  
+      }
+   }
+   &__text2 {
+      color: #42BFF8;
+      margin: 0;
+
+      @media(max-width: 575px) {
+         max-width: 270px; 
+         margin:  auto;
+      }
+   }
+
+   &__img {
+      max-width: 655px;
+
+      @media(max-width: 1200px) {
+         flex-basis: 50%;         
+      }
+      @media(max-width: 1024px) {
+         flex-basis: 100%;
+         margin: 0 auto 37px;         
+         padding: 0 7px;         
+      }
+      img {
+         max-width: 100%;
+      }
+   }
+
+   &__decor1 {
+      position: absolute;
+      border-radius: 50%;
+      background: #42BFF8;
+      // filter: blur(191.5px);
+      background: radial-gradient(circle farthest-corner at center center, rgb(175, 230, 255) 0%, transparent 60%);
+      pointer-events: none;
+      width: 737px;
+      height: 700px;
+      right: -10%;
+      top: -25%;
+      opacity: 0.08;
+   }
+   
+}

@@ -1,0 +1,675 @@
+.fw-700 {
+    font-weight: 700;
+  }
+  .fw-600 {
+    font-weight: 600;
+  }
+  .fw-500 {
+    font-weight: 500;
+  }
+  .fw-400 {
+    font-weight: 400;
+  }
+  .fw-300 {
+    font-weight: 300;
+  }
+  
+  .op-7 {
+    opacity: 0.7;
+  }
+  .op-5 {
+    opacity: 0.5;
+  } 
+  
+  .m-text-1 {
+    margin-bottom: 28px;
+  }
+  .m-text-2 {
+    margin-bottom: 55px;
+  }
+  .m-text-3 {
+    margin-bottom: 64px;
+  }
+  .m-text-4 {
+    margin-bottom: 16px;
+  }
+  .m-text-5 {
+    margin-bottom: 90px;
+  }
+  
+  .section-1 .text-1 {
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 112px;
+  }
+  .section-1 .text-1{
+      font-weight: bold;
+      font-size: 96px;
+      line-height: 112px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 12px;
+      flex-wrap: wrap;
+  }
+  
+  @media (max-width: 1336px) {
+    .section-7 .text-5 br {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section-1 .text-1 {
+      font-size: 62px;
+      line-height: 115%;
+    }
+  }
+  @media(max-width: 768px) {
+      .section-1 .text-1 {
+          font-size: 46px;
+          line-height: 115%;
+          margin-bottom: 32px;
+      }
+  }
+  
+  .section-1 .text-2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 115%;
+  }
+  
+  @media(max-width: 768px) {
+      .section-1 .text-2 {
+          font-size: 32px;
+          line-height: 115%;
+      }
+  }
+  
+  .section-1 .text-3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 892px;
+  }
+  
+  @media(max-width: 768px) {
+      .section-1 .text-3 {
+          font-size: 20px;
+          line-height: 150%;
+          font-weight: 400;
+      }
+  }
+  
+  .section-1 .text-4 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  @media (max-width: 768px) {
+      .section-1 .text-4 {
+          font-size: 22px;
+          padding-left: 30px;
+      }
+  }
+  
+  .section-1 .text-5 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+  }
+  
+  .section-2 .text-1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 64px;
+  }
+  
+  
+  .section-2 .text-2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 125%;
+    // margin-bottom: 42px;
+  }
+
+  @media (max-width: 1471px) {
+    .section-2 .text-2 {
+      margin-bottom: 42px;
+    }
+  }
+  
+  .section-2 .text-2-lh60 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 125%;
+    margin-bottom: 24px;
+    margin-top: 92px;
+  }
+  
+  .section-2 .text-3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .section-2 .text-1 {
+        font-size: 36px;
+        line-height: 125%;
+    }
+  
+    .section-2 .text-2 {
+        font-size: 22px;
+        line-height: 150%;
+    }
+  
+    .section-2 .text-2-lh60 {
+      margin-top: 32px;
+    }
+  }
+  
+  .section-2 .text-4 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 45px;
+
+    @media (max-width: 1500px) {
+      font-size: 2vw;
+      line-height: 1.4;
+    }
+    @media (max-width: 1200px) {
+      font-size: 1.75vw;
+    }    
+    @media (max-width: 991px) {
+      font-size: 32px;
+    }    
+    @media (max-width: 640px) {
+      font-size: 4.7vw;
+    } 
+  }
+  
+  .section-2 .text-5 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+  }
+  
+  .section-3 .text-1 {
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 75px;
+    margin-bottom: 35px;
+  }
+  
+  .section-3 .text-2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  @media (max-width: 768px) {
+      .section-3 .text-1 {
+          font-size: 36px;
+          line-height: 125%;
+      }
+  
+      .section-3 .text-2 {
+          font-size: 22px;
+          line-height: 150%;
+      }
+  }
+  
+  .section-3 .text-3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .section-3 .text-4 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  
+  .section-4 .text-1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 70px;
+  }
+  
+  .section-4 .text-2 {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 42px;
+  }
+  
+  @media (max-width: 768px) {
+      .section-4 .text-1 {
+          font-size: 36px;
+          line-height: 125%;
+      }
+  
+      .section-4 .text-2 {
+          font-size: 22px;
+          line-height: 150%;
+      }
+  }
+  
+  
+  .section-5 .text-1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    margin-left: 30px;
+    margin-bottom: 80px;
+  }
+  
+  .section-5 .text-2 {
+    font-weight: 700;
+    font-size: 32px;
+    /* line-height: 40px; */
+    line-height: 125%;
+    margin-left: 15px;
+  }
+  
+  .section-5 .text-3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 15px;
+  }
+  
+  @media (max-width: 768px) {
+      .section-5 .text-1 {
+          font-size: 36px;
+          line-height: 125%;
+          margin-left: 15px;
+          margin-bottom: 32px;
+      }
+  
+      .section-5 .text-2 {
+          font-size: 22px;
+          line-height: 150%;
+          margin-left: 0;
+      }
+  
+      .section-5 .text-3 {
+          font-size: 20px;
+          line-height: 150%;
+          margin-left: 0;
+      }
+  }
+  
+  .section-6 .text-1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+  }
+  
+  .section-6 .text-2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  .section-6 .text-3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  
+  .section-6 .text-4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  .section-7 .text-1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+  }
+  
+  @media (max-width: 768px) {
+      .section-6 .text-1 {
+          font-size: 36px;
+          line-height: 125%;
+          margin-bottom: 32px;
+      }
+  
+      .section-6 .text-2 {
+          font-size: 22px;
+          line-height: 150%;
+          margin-left: 0;
+      }
+  
+      .section-6 .text-3 {
+          font-size: 20px;
+          line-height: 150%;
+          margin-left: 0;
+      }
+  
+      .section-6 .text-4 {
+          font-size: 20px;
+          line-height: 150%;
+          margin-left: 0;
+      }
+  }
+  
+  .section-7 .text-1 {
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 75px;
+  }
+  
+  @media (max-width: 768px) {
+      .section-7 .text-1 {
+          font-size: 38px;
+          line-height: 125%;
+          text-align: left !important;
+      }
+  }
+  
+  .section7-text .row {
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  
+  .section-7 .text-2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    max-width: 900px;
+    align-self: center;
+  }
+  
+  .section-7 .text-3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    /* word-wrap: break-word; */
+  }
+  
+  .section-7 .text-4 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .section-7 .text-5 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    margin-right: 10px;
+  }
+  
+  .section-8 .text-1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 75px;
+  }
+  
+  .section-8 .text-2 {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 38px;
+  }
+  
+  .section-8 .text-4 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 38px;
+  }
+  
+  .section-8 .text-3 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+  }
+  
+  .section-10 .text-1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 53px;
+    margin-bottom: 30px;
+  }
+  
+  .section-10 .text-2 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 50px;
+    margin-bottom: 44px;
+  }
+  
+  .section-11 .text-1 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .section-11 .text-2 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: left;
+  }
+  
+  .section-12 .text-1 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  @media (max-width: 520px) {
+   .section-1_subtitle {
+      font-size: 6.1vw !important;
+   }
+  }
+  @media (max-width: 425px) {
+    h2.text-1,
+    .section-10 .text-1,
+    .modal-content .text-1 {
+      font-size: 25px !important;
+      line-height: 1.25;
+    }
+
+    .section-1_subtitle {
+      font-size: 5.5vw !important;
+    }
+  
+    .section-2 .text-1,
+    .section-3 .text-1,
+    .section-5 .text-1,
+    .section-10 .text-1 {
+      margin-bottom: 40px;
+    }
+  
+    .section-4 .text-1,
+    .section-7 .text-1,
+    .section-8 .text-1 {
+      margin-bottom: 20px;
+    }
+  
+    .modal-content .text-2 {
+      line-height: 1.5;
+    }
+  
+    .section-2 .text-2 {
+      font-size: 16px !important;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .section-2 .text-2-lh60 {
+      font-size: 16px;
+      margin-bottom: 40px;
+      margin-top: 20px;
+    }
+  
+    .section-2 .text-2 br {
+      display: none;
+    }
+  
+    .section-2 .text-3 {
+      font-size: 10px !important;
+      line-height: 15px;
+      font-weight: 400;
+    }
+  
+    .section-2 .text-4.mb-3 {
+      margin-bottom: 5px;
+    }
+  
+    .section-2 .text-5 {
+      font-size: 10px;
+      line-height: 15px;
+      margin: 2px auto;
+    }
+  
+    .section-3 .text-2 {
+      font-size: 16px;
+      line-height: 1.25;
+      margin: 0;
+    }
+  
+    .section-3 .text-3 {
+      font-size: 11px;
+      line-height: 16px;
+      color: #0A212E;
+      margin: 0;
+    }
+  
+    .section-4 .text-2 {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+  
+    // .theme-light .section-5 .text-1,
+    // .theme-light .section-5 .text-2 {
+    //   color: #0A212E;
+    // }
+  
+    .section-5 .text-2 {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  
+    .section-5 .text-3 {
+       font-size: 13px;
+       line-height: 16px;
+    }
+    // .theme-light .section-5 .text-3 {
+    //    color: #68737A;
+    // }
+  
+    .section-6 h2 {
+      margin: 0 !important;
+    }
+  
+    .section-6 .text-2 {
+      font-size: 25px;
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+  
+    .section-6 .lead.text-3 {
+      color: #68737A;
+      font-size: 16px;
+      line-height: 24px;
+      opacity: 1;
+      font-weight: 400;
+      padding: 0 !important;
+      padding-left: 10px !important;
+      margin-bottom: 40px;
+    }
+  
+    .section-7 .text-1 {
+      // color: #0A212E;
+    }
+  
+    .section-7 .text-2 {
+      color: #68737A;
+      font-size: 16px;
+      font-weight: 500;
+      opacity: 1;
+      line-height: 24px;
+      margin-bottom: 40px;
+      text-align: left !important;
+    }
+  
+    .section-7 .text-3 {
+      margin-bottom: 0;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  
+    .section-7 .text-4 {
+      margin: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  
+    .section-8 .text-2 {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+  
+    .section-8 .text-3 {
+      font-size: 16px;
+      line-height: 1.5;
+      // margin-bottom: 40px;
+    }
+  
+    .section-8 .text-4 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      max-width: 327px;
+    }
+  
+    .section-10 .text-2 {
+      font-size: 25px;
+      line-height: 1.25;
+      margin-bottom: 60px;
+    }
+  
+    .section-11 .text-1 {
+      // line-height: 24px;
+      line-height: 1;
+      font-weight: 700;
+      // margin-bottom: 20px !important;
+    }
+  
+    .section-11 .text-2 {
+      font-size: 16px;
+      line-height: 24px;
+      color: #A0A5A7;
+      opacity: 1;
+    }
+  
+    .footer-logo .text-2 {
+      font-size: 10px;
+      line-height: 1.4;
+      max-width: 140px;
+      color: #A0A5A7;
+      opacity: 1;
+    }
+  
+    .section-12 .text-1 {
+      font-size: 10px;
+      line-height: 1.5;
+      color: #A0A5A7;
+      opacity: 1;
+    }
+  }

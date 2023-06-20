@@ -1,0 +1,74 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.agent {
+  @include containerBorder;
+  padding: 0 !important;
+  overflow: hidden;
+  @include mediaEx{
+    width: auto;
+  }
+  @include mediaLg {
+    width: 100%;
+  }
+  &__cover {
+    height: 174px;
+    position: relative;
+    margin-bottom: 51px;
+  }
+  &__avatar {
+    display: block;
+    width: 93px !important;
+    height: 93px !important;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    top: 100% !important;
+    left: 24px !important;
+    translate: 0 -50%;
+    border: 5px solid white;
+  }
+  &__realty {
+    width: 100%;
+    object-fit: cover;
+  }
+  &__info,
+  &__creds {
+    padding: 0 24px 24px 24px;
+  }
+  &__name{
+    @include titleFont(22px, 1.2);
+    @include mediaMd {
+      @include titleFont(18px, 1.2);
+    }
+  }
+  &__motto{
+    @include subtitleFont(18px, 1.4);
+    @include mediaMd {
+      @include subtitleFont(14px, 1.4);
+    }
+  }
+  &__creds {
+    padding: 0 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    @include mediaMd {
+      display: grid;
+      grid-template: auto auto / 1fr 1fr;
+      row-gap: 20px;
+    }
+  }
+  &__credTitle {
+    @include subtitleFont(16px, 1.4);
+    margin-bottom: 2px;
+    @include mediaMd {
+      @include subtitleFont(12px, 1.4);
+    }
+  }
+  &__credText{
+    @include subtitleFont(18px, 1.4);
+    color: black;
+    @include mediaMd {
+      @include subtitleFont(14px, 1.4);
+    }
+  }
+}

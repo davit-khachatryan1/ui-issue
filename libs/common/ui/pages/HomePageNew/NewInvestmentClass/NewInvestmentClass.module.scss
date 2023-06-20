@@ -1,0 +1,199 @@
+
+$color-title: #FFFFFF;
+$color-text: #A8B3BC;
+$color-accent: #42BFF8;
+
+.investment {
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+   margin-bottom: 231px;
+   padding: 50px 0 0px 56px;
+   gap: 0 45px;
+   
+   @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      text-align: center; 
+      padding-left: 0;   
+      flex-direction: column;
+      align-items: center;  
+      padding: 50px 0px 0px 00px;
+   }
+   @media (max-width: 575px) {
+      margin-bottom: 90px;
+      margin-top: 80px;
+   }
+
+   &__content {
+      max-width: 550px;
+      // background-color: yellowgreen;
+
+      @media (max-width: 1250px) {
+         max-width: 50%;
+      }
+      @media (max-width: 1024px) {
+         max-width: 100%;
+      }
+      @media (max-width: 575px) {
+         max-width: 320px;
+         margin: 0 auto;
+      }
+   }
+
+   &__title {
+      font-size: 44px !important;
+      line-height: 1.45;
+      font-weight: 500;
+      color:  $color-title;
+      margin-bottom: 13px;
+      width: 100%;
+
+      @media (max-width: 575px) {
+         font-size: 27px !important;
+         line-height: 40px;
+         margin-bottom: 10px;
+      }
+   }
+   &__text {
+      font-size: 24px;
+      line-height: 1.33;
+      font-weight: 300;
+      color: #D1D5D8;
+      margin-bottom: 52px;
+      max-width: 560px;
+
+      @media (max-width: 1100px) {
+         margin-bottom: 40px;
+      }
+      @media (max-width: 575px) {
+         font-size: 18px;
+         margin-bottom: 40px;
+      }
+   }
+   &__access {
+      background: rgba(31, 56, 76, 0.5);
+      border: 1px solid rgba(49, 181, 255, 0.2);
+      border-radius: 0 24px 24px 0;
+      margin-left: -50vw;
+      padding: 33px 24px 34px 50vw;
+      text-align: left;  
+      
+      @media (max-width: 1024px) {
+         margin-left: -85px;
+         padding: 40px 52px 40px 85px;
+         order: 1;
+
+      }
+      @media (max-width: 575px) {
+         padding: 20px 20px 25px 85px;         
+      }
+
+      &--ar {
+         margin-left: 0;
+         margin-right: -50vw;
+         padding: 33px 50vw 34px 24px;
+         border-radius: 24px 0 0 24px;
+         text-align: right;
+      }
+   }
+   &__access_title {
+      font-size: 32px;
+      line-height: 1.5;
+      font-weight: 400;
+      color: #42BFF8;
+      margin-bottom: 16px;
+
+      @media (max-width: 575px) {
+         font-size: 20px;
+         margin-bottom: 12px;
+      }
+   }
+   &__access_text {
+      font-size: 24px;
+      line-height: 1.33;
+      font-weight: 300;
+      color: #D1D5D8;
+      margin: 0;
+
+      @media (max-width: 575px) {
+         font-size: 16px;
+         line-height: 1.3125;
+      }
+   }
+
+   &__img {
+      max-width: 640px;
+      
+      img {
+         max-width: 100%;
+      }
+
+      
+      @media (max-width: 1024px) {
+         margin-bottom: 54px;
+      }
+      @media (max-width: 575px) {
+         max-width: 80%;
+         object-position: center;
+         object-fit: contain;
+         transform: translateX(-10%);
+         img {
+            max-width: 120%;
+         }
+      }
+
+   }
+}
+
+.info {
+   background-image: url("../../../assets/imgs/new-investment-class-decor.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 297px;
+   height: 191px;
+   padding: 27px 20px 20px 31px;
+   position: absolute;
+   bottom: -4px;
+   left: 35%;
+   display: none; // Удалить эту строчку если вдруг блок понадобится
+
+   &__location {
+      font-size: 16px;
+      line-height: 1.1875;
+      color: #D1D5D8;
+      opacity: 0.75; 
+   }
+   &__name {
+      font-size: 28px;
+      line-height: 1.25;
+      font-weight: 700;
+      color: $color-title;
+      margin-bottom: 6px;
+   }  
+   &__conditions {
+      display: flex;
+      gap: 31px; 
+      padding-top: 14px;
+      border-top: 1px solid rgba($color: #A8B3BC, $alpha: 0.15);
+
+      div {
+         font-size: 28px;
+         line-height: 1.25;
+         font-weight: 700;
+         color: #42BFF8;
+      }
+
+      span {
+         display: block;
+         font-size: 16px;
+         line-height: 1.1875;
+         opacity: 0.75;
+         margin-bottom: 2px;
+         color: #D1D5D8;
+      }
+   }
+   &__location {
+
+   }
+}

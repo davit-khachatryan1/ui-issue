@@ -1,0 +1,41 @@
+
+.ResearchTextStyles{
+ background: linear-gradient(178.05deg, rgba(66,191,248,0.3)34.79%,rgba(66,191,248,0) 98.3%);
+   opacity: 0.8;
+
+   &__research{
+      color: #ffffff;
+      font-size: 45px;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      padding-top: 150px ;
+   }
+   &__researchtext{
+
+      color: #ffffff;
+      font-size: 35px;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      padding-top: 50px ;
+      text-align: center;
+      &__textblue{
+         color: #42BFF8;
+      }
+      &__textgray{
+         padding-bottom: 200px;
+         margin-bottom: 100px;
+         text-align: center;
+         &__graycolor{
+            color:#A8B3BC;
+            font-size: 20px;
+         }
+      }
+
+      &__size{
+         width: 800px;
+      }
+   }
+
+}

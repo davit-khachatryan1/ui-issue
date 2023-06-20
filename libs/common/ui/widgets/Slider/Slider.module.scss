@@ -1,0 +1,53 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.slider {
+  aspect-ratio: 775/484;
+  //max-width: calc(100% - 405px);
+  &__wrapper {
+    position: relative;
+    aspect-ratio: inherit;
+    //height: 484px;
+    overflow: hidden;
+    &:hover {
+      .slider__arrow {
+        opacity: 1;
+      }
+    }
+  }
+  &__track {
+    display: flex;
+    height: 100%;
+    // transition: translate;
+  }
+  &__image {
+    min-width: 100%;
+    user-select: none;
+    width: 100%;
+    pointer-events: none;
+  }
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    cursor: pointer;
+    // transition: opacity 0.3s;
+    z-index: 2;
+    translate: 0 -50%;
+    @include mediaLg {
+      opacity: 1;
+    }
+  }
+  &__arrow--left {
+    left: 20px;
+    rotate: 180deg;
+    @include mediaMd {
+      left: 0px;
+    }
+  }
+  &__arrow--right {
+    right: 20px;
+    @include mediaMd {
+      right: 0px;
+    }
+  }
+}

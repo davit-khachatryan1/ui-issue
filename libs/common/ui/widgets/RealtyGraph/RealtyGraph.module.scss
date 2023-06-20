@@ -1,0 +1,157 @@
+@import "libs/common/ui/scss/indexDemo.scss";
+
+.realtyGraph {
+
+   @include containerBorder;
+
+  grid-column: span 2;
+  &__salesInfo {
+    display: grid;
+    grid-template: repeat(3, auto) / 1fr auto;
+    gap: 4px;
+  }
+  &__currency {
+    border: 1px solid #1D374D;
+    border-radius: 500px;
+    grid-row: span 2;
+    justify-self: flex-end;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 16px;
+    @include subtitleFont(14px, 1.2, 600);
+    @include mediaMd {
+      @include subtitleFont(10px, 1.2, 600);
+    }
+    // color: #015b5b;
+    color: #42BFF8 !important;
+  }
+  &__salesPrice {
+   color: #ffffff;
+    @include titleFont(28px, 1.2);
+    @include mediaMd {
+      @include titleFont(22px, 1.2);
+      grid-column: span 2;
+    }
+  }
+  &__salesAddress {
+   color: #ffffff !important;
+    @include subtitleFont(16px, 1.45);
+    padding-bottom: 8px;
+    display: inline-block;
+    @include mediaMd {
+      @include subtitleFont(12px, 1.45);
+      margin-bottom: 4px;
+    }
+  }
+  &__salesPremarket {
+    display: flex;
+    align-items: center;
+    p {
+      @include titleFont(16px, 1.45, 400);
+      @include mediaMd {
+        @include titleFont(12px, 1.45, 400);
+        grid-column: span 2;
+      }
+      color: #6488AD;
+    }
+    span {
+      display: flex;
+      align-items: center;
+      @include subtitleFont(16px, 1.2, 500);
+      @include mediaMd {
+        @include subtitleFont(12px, 1.2, 500);
+      }
+      color: #08DDC3 !important;
+    }
+  }
+  &__updateTime {
+   // caret-color: red;
+    @include titleFont(12px, 1.2, 400);
+    @include mediaMd {
+      @include titleFont(8px, 1.2, 400);
+    }
+    color: #6488AD;
+  }
+  &__graph {
+    margin: 32px 0;
+    padding-right: 44px;
+  }
+  &__graphExample {
+    width: 100%;
+    height: auto;
+
+    line {
+      stroke: #3C5061;
+    }
+    ellipse {
+      &:nth-last-child(2) {
+         fill: #162C3E;
+      }
+      &:nth-last-child(1) {
+         fill: #42BFF8;
+      }
+    }
+    rect {
+      fill: rgba(66, 191, 248, 0.15);
+    }
+    path {
+      &:not(:nth-last-child(3)) {
+         fill: #6488AD;
+      }
+      &:nth-last-child(3) {
+         stroke: #42BFF8;
+      }
+      &:nth-last-child(5),
+      &:nth-last-child(4)      
+      {
+         fill: #42BFF8;
+      }
+    }
+  }
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include titleFont(12px, 1.2, 400);
+    @include mediaMd {
+      @include titleFont(8px, 1.2, 400);
+    }
+    color: $grayColor;
+  }
+  &__controlsDates {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @include mediaMd {
+      gap: 4px;
+    }
+  }
+  &__controlsDate {
+    @include subtitleFont(12px, 1.2, 600);
+    color: #B2BCC6;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    width: 38px;
+    height: 26px;
+    @include mediaMd {
+      width: 20px;
+      height: 16px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include subtitleFont(8px, 1.2, 600);
+    }
+  }
+  &__controlsDate--selected {
+    position: relative;
+    color: #42BFF8;
+    background-color: rgba(66, 191, 248, 0.15);
+    border: 1px solid #42BFF8;
+   border-radius: 4px;
+  }  
+}

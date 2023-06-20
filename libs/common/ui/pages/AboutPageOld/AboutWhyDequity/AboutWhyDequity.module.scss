@@ -1,0 +1,59 @@
+.AboutWhyDequity{
+
+display: flex;
+  &__GridBlocks{
+    padding: 33.5px;
+    margin: auto;
+    &__text{
+    font-family: 'Gilroy', serif;
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 400;
+      margin: auto;
+      text-align: start;
+
+
+    }
+    &__imgs{
+      align-items: end;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+ &__TitleandText{
+   margin: auto;
+   font-family: 'Gilroy', serif;
+
+
+   &__Title{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    text-align: center;
+     @media (max-width: 1200px) {
+       font-size: 40px;
+       display: flex;
+       flex-direction: column;
+
+     }
+
+  }
+  &__TitleText{
+    font-size: 24px;
+    font-weight: 400;
+    color: #D1D5D8;
+    line-height: 32px;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 500px;
+    margin: auto;
+    @media (max-width: 1200px) {
+      margin: 0;
+      color: #D1D5D8;
+      font-size: 18px;
+      width: 100%;
+
+    }
+  }
+ }
+}
