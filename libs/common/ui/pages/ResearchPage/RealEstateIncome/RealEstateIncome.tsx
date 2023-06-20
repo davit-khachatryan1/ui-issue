@@ -47,7 +47,7 @@ export const RealEstateIncome = ({ data }: { data: any }) => {
                   </p>
             </div>
             <div className={style.realEstateIncome__img}>
-               <img src={grafic.src} alt="grafic" />
+               <img src={grafic} alt="grafic" />
             </div>
 
             <div className={style.realEstateIncome__decor1}></div>
