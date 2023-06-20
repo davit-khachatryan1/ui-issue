@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./RealEstateIncome.module.scss";
 import cl from "classnames";
-import grafic from "../../../assets/imgs/RealEstateIncome.svg";
+import grafic from "../../../assets/imgs/realEstateIncome.svg";
 
 
 
@@ -47,7 +47,7 @@ export const RealEstateIncome = ({ data }: { data: any }) => {
                   </p>
             </div>
             <div className={style.realEstateIncome__img}>
-               <img src={grafic} alt="grafic" />
+               <img src={grafic.src} alt="grafic" />
             </div>
 
             <div className={style.realEstateIncome__decor1}></div>
